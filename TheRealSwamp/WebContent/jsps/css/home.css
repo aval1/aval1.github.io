@@ -1,0 +1,23 @@
+.topnav {
+    background-color: #FF2400;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    color: #ff8080;
+    background-color: #ff8080;
+}
+
+.topnav a {
+    float: right;
+    color: #1A1F28;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height:15px;
+    font-size: 17px;
+}
+#mapid { height: 180px; }
