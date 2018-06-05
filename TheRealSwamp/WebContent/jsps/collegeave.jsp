@@ -4,86 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #FF2400;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-/* Style the close button */
-.topright {
-    float: right;
-    cursor: pointer;
-    font-size: 28px;
-}
-
-.topright:hover {color: red;}
-
-.topnav {
-    background-color: #FF2400;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: black;
-    border-radius: 5px;
-}
-
-.topnav a:hover {
-    color: #ffffff;
-    background-color: #ff8080;
-}
-
-.topnav a {
-    float: right;
-    color: #1A1F28;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    height:15px;
-    font-size: 17px;
-}
-</style>
 </head>
 <body>
 
 <div class="topnav">
-	<a href="alerts">Alerts</a>
-	<a href="help">Help</a>
+	<div class="logo">
+		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
+			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
+		</a>
+	</div>
+	<a href="#">Alerts</a>
+	<a href="#">Help</a>
 </div>
 
 <div>

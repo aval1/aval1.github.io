@@ -29,8 +29,13 @@
 
 <body>
 <div class="topnav">
-	<a href="alerts">Alerts</a>
-	<a href="help">Help</a>
+	<div class="logo">
+		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
+			<img src="${pageContext.request.contextPath}/jsps/images/redswamp.png" style="width:71px;height:50px;">
+		</a>
+	</div>
+	<a href="#">Alerts</a>
+	<a href="#">Help</a>
 </div>
 
 <div>
