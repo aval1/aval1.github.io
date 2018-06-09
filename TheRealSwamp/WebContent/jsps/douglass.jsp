@@ -18,13 +18,12 @@
 	</div>
 	<a href="#">Alerts</a>
 	<a href="#">Help</a>
+	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
 <div>
 <h1>Douglass</h1>
-<p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
-It seems that a lot of these historical tidbits have been lost in the translation of time.
-I'm here to see that shit come back to life </p>
+<p> Douglass college was started by Mabel Smith Douglass (who has an interesting story of her own) </p>
 </div>
 
 <div class="tab">
@@ -86,6 +85,6 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-     
+ <footer>Copyright &copy; Big Pumba Studios</footer>    
 </body>
 </html> 

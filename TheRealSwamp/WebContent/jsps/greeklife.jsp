@@ -20,6 +20,7 @@
 	</div>
 	<a href="#">Alerts</a>
 	<a href="#">Help</a>
+	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
 <div>
@@ -43,11 +44,6 @@ the history of each organization is very deep, and im sure only each of the scho
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
   <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
   <tr>
 <td><a href="https://ruadphi.wixsite.com/alpha-delta-phi-ru" target="_blank" rel="noopener">Alpha Delta Phi</a></td>
 <td><a href="http://rutgersaepi.org/" target="_blank" rel="noopener">Alpha Epsilon Pi</a></td>
@@ -94,6 +90,49 @@ the history of each organization is very deep, and im sure only each of the scho
 
 <p><a href="#">Do it.</a></p>
 </div>
+
+<table>
+    <tr>
+        <td>1</td>
+        <td>4</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>5</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+    </tr>
+</table>
+
+
+<p><a href="#">Do it.</a></p>
+<script>
+$("a").click(function(){
+    $("table").each(function() {
+        var $this = $(this);
+        var newrows = [];
+        $this.find("tr").each(function(){
+            var i = 0;
+            $(this).find("td").each(function(){
+                i++;
+                if(newrows[i] === undefined) { newrows[i] = $("<tr></tr>"); }
+                newrows[i].append($(this));
+            });
+        });
+        $this.find("tr").remove();
+        $.each(newrows, function(){
+            $this.append(this);
+        });
+    });
+
+    return false;
+});
+</script>
 
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -142,6 +181,6 @@ document.getElementById("defaultOpen").click();
      
 </body>
 </html> 
-
+<footer>Copyright &copy; Big Pumba Studios</footer>
 </body>
 </html>

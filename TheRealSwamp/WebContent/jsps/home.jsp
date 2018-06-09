@@ -20,7 +20,15 @@
    
 <style>
 
-#mapid { height: 180px; }
+#mapid { height: 300px; }
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
 
 </style>
 
@@ -36,6 +44,7 @@
 	</div>
 	<a href="#">Alerts</a>
 	<a href="#">Help</a>
+	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
 <div>
@@ -47,9 +56,9 @@ I'm here to see that shit come back to life </p>
 <div>
 <h3> Did You Know? </h3>
 <ul>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....</li>
+	<li>Rutgers has a tomato named after itself</li>
+	<li>I'm pretty sure we discovered penicillin </li>
 </ul>
 </div>
 <div>
@@ -57,9 +66,9 @@ I'm here to see that shit come back to life </p>
 <ul>
 	<li><a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a></li>
 	<li><a href="${pageContext.request.contextPath}/Busch">Busch</a></li>
-	<li><a href="livingston.jsp">Livingston</a></li>
-	<li><a href="cook.jsp">Cook</a></li>
-	<li><a href="douglass.jsp">Douglass</a></li>
+	<li><a href="${pageContext.request.contextPath}/Livingston">Livingston</a></li>
+	<li><a href="${pageContext.request.contextPath}/Cook">Cook</a></li>
+	<li><a href="${pageContext.request.contextPath}/Douglass">Douglass</a></li>
 	<li><a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a></li>
 </ul>
 
@@ -98,7 +107,7 @@ I'm here to see that shit come back to life </p>
 <div id="mapid"></div>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
-
+<footer>Copyright &copy; Big Pumba Studios</footer>
 </body>
 <script src="${pageContext.request.contextPath}/jsps/js/slideshow.js"></script>
 <script src="${pageContext.request.contextPath}/jsps/js/mymap.js"></script>

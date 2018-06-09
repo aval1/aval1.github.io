@@ -1,4 +1,12 @@
-body {font-family: Arial;}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
+}
 
 /* Style the tab */
 .tab {
@@ -69,4 +77,11 @@ body {font-family: Arial;}
     display: inline-block;
     padding: 0px;
 }
-#mapid { height: 180px; }
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-$("a").click(function(){
+$(document).ready(function () {
     $("table").each(function() {
         var $this = $(this);
         var newrows = [];
@@ -15,6 +15,6 @@ $("a").click(function(){
             $this.append(this);
         });
     });
-    
+
     return false;
 });

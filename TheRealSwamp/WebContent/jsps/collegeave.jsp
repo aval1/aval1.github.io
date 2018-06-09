@@ -18,6 +18,7 @@
 	</div>
 	<a href="#">Alerts</a>
 	<a href="#">Help</a>
+	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
 <div>
@@ -92,6 +93,6 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-     
+<footer>Copyright &copy; Big Pumba Studios</footer>    
 </body>
 </html> 
