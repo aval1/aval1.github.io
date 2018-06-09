@@ -23,11 +23,12 @@
 
 <div>
 <h1>Busch Campus</h1>
-<p>Busch campus startedafter a 256-acre tract was purchased by the then president Robert C. Clothier (sound familar?), and was named the River Road Campus. 
-A stadium was completed in 1938 in land that was orignally a country club (hence the 18 hole golf course being on busch that is still used today),
-and is where many athletic events were held until ****more information about stadium here*****
 
-</p>
+<p>Busch campus started after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>, 
+and was named the River Road Campus. A stadium was completed in 1938 in land that was orignally a country club (golf course),
+and is where many athletic events were held until it was replaced with High Point Solution Stadium now. **Then it was named University Heights Campus***
+The campus was renamed Busch after an eccentric millionare Charles L. Busch donated $10 million to the University for biological research after he died.
+ ****more information about stadium here***** </p>
 </div>
 
 <div class="tab">
@@ -48,7 +49,13 @@ and is where many athletic events were held until ****more information about sta
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-  <p>Paris is the capital of France.</p> 
+  <ul>
+	<li>Every Thursday, you can check out the stars at the physics building</li>
+	<li>A Rutgers Bus crashed into McCormick Suites in <a href="http://www.dailytargum.com/article/2001/09/bus-loses-control-crashes">2001</a>, no one was seriously injured</li>
+	<li>The Busch Campus Cove used to be an arcade</li>
+	<li>Back when the drinking age used to be 18 (the good ole days), gerlanda's used to be a bar</li>
+	<li>Actually apperntly all of the student centers used to have pubs</li>
+</ul> 
 </div>
 
 <div id="Map" class="tabcontent">

@@ -47,7 +47,12 @@ I'm here to see that shit come back to life </p>
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-  <p>Paris is the capital of France.</p> 
+    <ul>
+	<li>Mine Street - used to be an Actual Copper <a href="https://assets.rbl.ms/14645584/980x.png">Mine</a> - Link to picture </li>
+	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate</li>
+	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. It has never wistled<li>
+	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
+	</ul> 
 </div>
 
 <div id="Map" class="tabcontent">

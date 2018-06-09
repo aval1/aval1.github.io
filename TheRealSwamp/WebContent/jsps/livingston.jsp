@@ -46,7 +46,12 @@ I'm here to see that shit come back to life </p>
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-  <p>Paris is the capital of France.</p> 
+  <ul>
+	<li>Tillett used to be the dining hall before it was a classroom building</li>
+	<li>It used to be called "Toliet" (See people can be mean but creative)</li>
+	<li>Lucy Stone Hall was designed by artitects so that it could not be occupied at once by protesting students, which is why it is so seperate<li>
+	<li>If you stand in the center of the Livi circle by the Student Center and clap, you can hear a squeak.</li>
+	</ul> 
 </div>
 
 <div id="Map" class="tabcontent">
