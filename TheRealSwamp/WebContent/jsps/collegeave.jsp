@@ -58,12 +58,27 @@ I'm here to see that shit come back to life </p>
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Map</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <div id="mapid"></div>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="${pageContext.request.contextPath}/jsps/js/collegeave.js"></script>
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Major Rankings</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <p>
+  <ul>
+	<li>Applied Sciences in Engineering</li>
+	<li>Bioenvironmental Engineering</li>
+	<li>Biomedical Engineering</li>
+	<li>Chemical and Biochemical Engineering</li>
+	<li>Civil and Environmental Engineering</li>
+	<li>Electrical and Computer Engineering</li>
+	<li>Industrial and Systems Engineering</li>
+	<li>Applied Sciences in Engineering</li>  
+	<li>Materials Science and Engineering</li>
+	<li>Mechanical and Aerospace Engineering</li>
+	</ul>
+  </p>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>

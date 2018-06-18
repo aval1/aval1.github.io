@@ -70,6 +70,7 @@ I'm here to see that shit come back to life </p>
 	<li><a href="${pageContext.request.contextPath}/Cook">Cook</a></li>
 	<li><a href="${pageContext.request.contextPath}/Douglass">Douglass</a></li>
 	<li><a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a></li>
+	<li><a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a></li>
 </ul>
 
 </div>

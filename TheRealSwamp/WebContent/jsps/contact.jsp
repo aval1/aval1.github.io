@@ -30,7 +30,7 @@ and is where many athletic events were held until ****more information about sta
 </p>
 </div>
 
-<form action="EmailSendingServlet" method="post">
+<form action="Contact" method="post">
         <table border="0" width="35%" align="center">
             <caption><h2>Send New E-mail</h2></caption>
             <tr>

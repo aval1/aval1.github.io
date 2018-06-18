@@ -38,7 +38,7 @@ public class Contact extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         // reads form fields
-        String recipient = request.getParameter("recipient");
+        String recipient = "andyval4@gmail.com";
         String subject = request.getParameter("subject");
         String content = request.getParameter("content");
  
@@ -53,7 +53,7 @@ public class Contact extends HttpServlet {
             resultMessage = "There were an error: " + ex.getMessage();
         } finally {
             request.setAttribute("Message", resultMessage);
-            getServletContext().getRequestDispatcher("/jsp/home.jsp").forward(
+            getServletContext().getRequestDispatcher("/jsps/home.jsp").forward(
                     request, response);
         }
     }
