@@ -5,6 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -79,6 +82,29 @@ I'm here to see that shit come back to life </p>
 	<li>Mechanical and Aerospace Engineering</li>
 	</ul>
   </p>
+  
+  <p>Please rate this item:</p>
+    <fieldset class="rating">     
+        <span><input type="radio" name="stars" id="4_stars" value="5" >
+        <label class="stars" for="4_stars">4 stars</label>
+        <input type="radio" name="stars" id="3_stars" value="4" >
+        <label class="stars" for="3_stars">3 stars</label>
+        <input type="radio" name="stars" id="2_stars" value="3" >
+        <label class="stars" for="2_stars">2 stars</label>
+        <input type="radio" name="stars" id="1_stars" value="2" >
+        <label class="stars" for="1_stars">1 star</label>
+        <input type="radio" name="stars" id="0_stars" value="1" required>
+        <label class="stars" for="0_stars">0 star</label>
+        <span  class="label"> Rating: </span>
+    </fieldset>
+    
+      	 <table>
+  <tr>
+<td id="lets"><a href="https://ruadphi.wixsite.com/alpha-delta-phi-ru" target="_blank" rel="noopener">Alpha Delta Phi</a></td>
+<td id="see"><a href="http://rutgersaepi.org/" target="_blank" rel="noopener">Alpha Epsilon Pi</a></td>
+<td id="money"><a href="http://akl.org/">Alpha Kappa Lambda</a></td>
+</tr>
+</table>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
