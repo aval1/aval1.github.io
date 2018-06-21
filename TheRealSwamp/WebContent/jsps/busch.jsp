@@ -7,6 +7,9 @@
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 </head>
 <body>
 
@@ -55,6 +58,8 @@ The campus was renamed Busch after an eccentric millionare Charles L. Busch dona
 	<li>The Busch Campus Cove used to be an arcade</li>
 	<li>Back when the drinking age used to be 18 (the good ole days), gerlanda's used to be a bar</li>
 	<li>Actually apperntly all of the student centers used to have pubs</li>
+	<li>The Rutgers Tennis Courts used to have a giant bubble surrounding it, but it got damaged by hurricanes
+	and was never repaired.</li>
 </ul> 
 </div>
 
@@ -65,8 +70,33 @@ The campus was renamed Busch after an eccentric millionare Charles L. Busch dona
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Major Rankings</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <table>
+    <tr>
+    <th>Major</th>
+    <th>Rating</th>
+    <th>Your Score</th>
+    <th>Average</th>
+    <th>Total Votes</th>
+  </tr>
+  <tr>
+  <td><a href="#">Applied Sciences in Engineering</a></td>
+  <td><fieldset class="rating">     
+        <span><input type="radio" name="stars" id="4_stars" value="5" >
+        <label class="stars" for="4_stars">4 stars</label>
+        <input type="radio" name="stars" id="3_stars" value="4" >
+        <label class="stars" for="3_stars">3 stars</label>
+        <input type="radio" name="stars" id="2_stars" value="3" >
+        <label class="stars" for="2_stars">2 stars</label>
+        <input type="radio" name="stars" id="1_stars" value="2" >
+        <label class="stars" for="1_stars">1 star</label>
+        <input type="radio" name="stars" id="0_stars" value="1" required>
+        <label class="stars" for="0_stars">0 star</label>
+    </fieldset></td>
+  <td id="lets">0</td>
+  <td id="see">0</td>
+  <td id="money">0</td>
+  </tr>
+  </table>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>

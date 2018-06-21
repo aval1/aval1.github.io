@@ -55,6 +55,9 @@ I'm here to see that shit come back to life </p>
 	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate</li>
 	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. It has never wistled<li>
 	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
+	<li>Theres a Helipad on Vorhees Mall??</li>
+	<li>Scudder Hall, where Rutgers Hillel stands now</li>
+	
 	</ul> 
 </div>
 

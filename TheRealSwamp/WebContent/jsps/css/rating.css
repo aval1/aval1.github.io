@@ -1,5 +1,5 @@
 .rating {
-    width: 300px;
+    width: 200px;
     height: 34px;
     background-color: #f6f3f3;
 }
@@ -36,18 +36,6 @@ span + input[type=radio] + label, legend + input[type=radio] + label {
     counter-reset: checkbox;
 }
  
-.rating input[type="radio"]:required + label:after {
-    content: '';
-    position: absolute;
-    left: 340px; 
-    min-height: 10px;
-    margin-top: -36px;
-    text-align: right;
-    background: #6cbf00;
-    padding: 10px 10px;
-    display: block;
-    width: 50px;
-}
  
 .rating label.stars {
     background: transparent url('http://www.findsourcecode.com/wp-content/uploads/2014/04/star_off.png') no-repeat center center;

@@ -22,7 +22,7 @@
 </div>
 
 <div>
-<h1>Cook</h1>
+<h1>Livingston</h1>
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
@@ -47,8 +47,11 @@ I'm here to see that shit come back to life </p>
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
   <ul>
-  	<li>Secret garden on Cook</li>
-  </ul>
+	<li>Tillett used to be the dining hall before it was a classroom building</li>
+	<li>It used to be called "Toliet" (See people can be mean but creative)</li>
+	<li>Lucy Stone Hall was designed by artitects so that it could not be occupied at once by protesting students, which is why it is so seperate<li>
+	<li>If you stand in the center of the Livi circle by the Student Center and clap, you can hear a squeak.</li>
+	</ul> 
 </div>
 
 <div id="Map" class="tabcontent">
@@ -89,6 +92,6 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-    <footer>Copyright &copy; Big Pumba Studios</footer> 
+  <footer>Copyright &copy; Big Pumba Studios</footer>   
 </body>
 </html> 

@@ -43,7 +43,6 @@ footer {
 		</a>
 	</div>
 	<a href="#">Alerts</a>
-	<a href="#">Help</a>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
@@ -59,6 +58,15 @@ I'm here to see that shit come back to life </p>
 	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....</li>
 	<li>Rutgers has a tomato named after itself</li>
 	<li>I'm pretty sure we discovered penicillin </li>
+	<li>You can print to any Rutgers printer from your laptop by 
+	downloading the RU Wireless print driver (google it).</li>
+	<li>On print release stations, you can select multiple jobs for printing at the same time. 
+	Select the first job and drag down at an angle; the rest of your jobs will also be selected. 
+	It's magical. </li>
+	<li>Rutgers offers personal training and massages for very 
+	cheap-- much cheaper than you'll find once you leave.</li>
+	<li>There's a bus that goes to NYC (Port Authority Bus Terminal) and tickets are around $17 round trip. It's cheaper than the $26 round trip train fare. 
+	You have to buy them from the SABO, in the bottom floor of the SAC.</li>
 </ul>
 </div>
 <div>
@@ -71,6 +79,8 @@ I'm here to see that shit come back to life </p>
 	<li><a href="${pageContext.request.contextPath}/Douglass">Douglass</a></li>
 	<li><a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a></li>
 	<li><a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a></li>
+	<li><a href="${pageContext.request.contextPath}/Timeline">Timeline</a></li>
+	<li><a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a></li>
 </ul>
 
 </div>
@@ -112,4 +122,25 @@ I'm here to see that shit come back to life </p>
 </body>
 <script src="${pageContext.request.contextPath}/jsps/js/slideshow.js"></script>
 <script src="${pageContext.request.contextPath}/jsps/js/mymap.js"></script>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </html>

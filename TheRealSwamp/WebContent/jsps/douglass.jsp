@@ -44,7 +44,12 @@
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
-  <p>Paris is the capital of France.</p> 
+  <ul>
+  <li>There is an abandoned pool in Jamison Hall. It is rumored that someone drowned in that pool.
+  It is currently being used for storage by Caberat theather</li>
+  <li>There is an abandoned bowling alley under Loore Classroom Building</li>
+  <li>Corwin Houses on Douglass?</li>
+  </ul>
 </div>
 
 <div id="Map" class="tabcontent">
