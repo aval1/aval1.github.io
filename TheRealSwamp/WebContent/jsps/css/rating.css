@@ -22,6 +22,7 @@ input[type="radio"] {
     position: absolute;
     left: 340px;
     margin-top: 10px;
+    visibility: hidden;
 }
                  
 input[type="radio"], .rating label.stars {
