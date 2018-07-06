@@ -70,6 +70,21 @@ It seems that a lot of these historical tidbits have been lost in the translatio
 I'm here to see that shit come back to life </p>
 </div>
 
+<form action="${pageContext.request.contextPath}/" method="post">
+	<input type="text" name="username" placeholder="Username" class="border" size=50> 
+	<br><br>
+	<input type="password" name="password" placeholder="Password" class="border" size=51> 
+	<br><br>
+	<button type="submit" name="button" value="button1" class="button">Submit</button>
+</form>
+<c:if test="${not empty success}" >
+	<br>
+	<c:if test="${not success}" >
+		Login Failed
+	</c:if>
+	
+</c:if>
+
 <div>
 <h3>Choose your Campus</h3>
 <ul>

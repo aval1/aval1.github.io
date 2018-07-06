@@ -18,5 +18,7 @@
 	<classpathentry kind="lib" path="C:/Users/aval9/Downloads/javax.mail.jar"/>
 	<classpathentry kind="lib" path="C:/Users/aval9/Downloads/mailactivation/mail.jar"/>
 	<classpathentry kind="lib" path="C:/Users/aval9/Downloads/mailactivation.zip"/>
+	<classpathentry kind="lib" path="C:/Users/aval9/Downloads/java-json.jar/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aval9/Downloads/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -3,6 +3,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="${pageContext.request.contextPath}/jsps/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="${pageContext.request.contextPath}/jsps/css/business-frontpage.css" rel="stylesheet">
+    
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,7 +128,72 @@
 </ul>
 </div>
 -->
-<div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="mt-4">Contact Us</h2>
+          <address>
+            <strong>Start Bootstrap</strong>
+            <br>3481 Melrose Place
+            <br>Beverly Hills, CA 90210
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">P:</abbr>
+            (123) 456-7890
+            <br>
+            <abbr title="Email">E:</abbr>
+            <a href="mailto:#">name@example.com</a>
+          </address>
+        </div>
+      </div>
+      <!-- /.row -->
 <h1>Busch Campus</h1>
 
 <p>*Busch Picture Slideshow here, that will grow big once you hover over it, dated</p>
@@ -135,11 +211,12 @@
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>Busch campus started after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>, 
-and was named the River Road Campus. A <a href="https://i.pinimg.com/originals/c9/1f/0f/c91f0f63691f3d93ac6a3ac6019a4856.jpg" class="preview"> stadium </a> was completed in 1938 in land that was orignally a country club (golf course),
-and is where many athletic events were held until it was replaced with High Point Solution Stadium now. **Then it was named University Heights Campus***
-The campus was renamed Busch after an eccentric millionare Charles L. Busch donated $10 million to the University for biological research after he died.
- ****more information about stadium here***** </p>
+  <p>Busch campus started in 1935 after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
+At the time it was named the River Road Campus. A <a href="${pageContext.request.contextPath}/jsps/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, on land that was orignally a country club (golf course),
+and is where many athletic events were held until it was replaced with High Point Solution Stadium now.  Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
+This is where the main math and engineering courses were taught. After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
+With this extra money, in 1962, Rutgers was able to relocate the College of Engineering to Busch Campus. At some point it was named University Heights Campus (idk why lol). Then in 1971, the campus was renamed Busch,
+after a millionare from edgewater named Charles L. Busch unexpecticly donated $10 million to the University for biological research after he died</p>
 </div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -219,6 +296,7 @@ The campus was renamed Busch after an eccentric millionare Charles L. Busch dona
   <h3>Pictures</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
+
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -239,5 +317,7 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>   
+<script src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+    <script src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

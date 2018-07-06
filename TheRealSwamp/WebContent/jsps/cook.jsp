@@ -1,3 +1,24 @@
+<%@page import="java.sql.*"%>
+<%! public static Connection connect(){
+	try{
+			      Class.forName("com.mysql.jdbc.Driver");
+			      return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3307/sakila","root","root");
+			      }
+	catch(Exception e){
+		return null;
+	}
+}
+
+	public static boolean close (Connection c){
+		try{
+			c.close();
+			return true;
+		}
+		catch(Exception e){
+			throw new Error(e);
+		}
+	}
+%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -27,6 +48,11 @@
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
 </div>
+
+<% Connection c = connect();
+out.print(c);
+close(c);
+%>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>

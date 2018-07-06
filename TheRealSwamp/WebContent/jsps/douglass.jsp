@@ -26,6 +26,59 @@
 <p> Douglass college was started by Mabel Smith Douglass (who has an interesting story of her own) </p>
 </div>
 
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+
+<form method="post">
+
+<table border="2">
+<tr>
+<td>user ID</td>
+<td>Birthday</td>
+<td>Gender</td>
+<td>First Name</td>
+<td>Last Name</td>
+</tr>
+<%
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:mysql://127.0.0.1:3307/sakila";
+String username="root";
+String password="root";
+String query="select * from ratings";
+Connection conn=DriverManager.getConnection(url, username, password);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+<tr><td><%=rs.getInt("ID") %></td></tr>
+<tr><td><%=rs.getString("Item") %></td></tr>
+<tr><td><%=rs.getString("Rating") %></td></tr>
+<tr><td><%=rs.getString("Votes") %></td></tr>
+<tr><td><%=rs.getFloat("Average") %></td></tr>
+
+ <%
+
+}
+%>
+</table>
+<%
+rs.close();
+stmt.close();
+conn.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+%>
+</form>
+
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
   <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
