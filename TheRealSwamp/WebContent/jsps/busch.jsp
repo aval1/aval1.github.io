@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,7 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
 </head>
@@ -285,6 +288,24 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <td  id="times">0</td>
   </tr>
   </table>
+  <form method="post">
+
+<table border="2">
+<tr>
+<td>user ID</td>
+<td>Birthday</td>
+<td>Gender</td>
+<td>First Name</td>
+<td>Last Name</td>
+</tr>
+<tr><td>${ids}</td>
+<td>${item}</td>
+<td>${rating}</td>
+<td>${votes}</td>
+<td>${average}</td>
+</tr>
+</table>
+</form>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -317,7 +338,7 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>   
-<script src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
