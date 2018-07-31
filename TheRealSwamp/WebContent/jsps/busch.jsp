@@ -25,6 +25,9 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
 #preview{
@@ -55,13 +58,12 @@
     list-style: outside none none !important;
 }
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
+    height: 300px;
+    width: 400px;
+    position: relative;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #111;
+    right: 0;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -97,6 +99,27 @@
 }
 }
 
+div#right-sidebar{
+  position:absolute;
+  top:0;
+  right:0;
+  width:<length>;
+  height:100%;
+ }
+ 
+.comment {
+
+}
+
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+
+}
+
 </style>
 <body>
 
@@ -111,26 +134,7 @@
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<!--<div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-</div>
-<div id="toc_container">
-<p class="toc_title">Contents</p>
-<ul class="toc_list">
-  <li><a href="#First_Point_Header">1 First Point Header</a>
-  <ul>
-    <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-    <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-  </ul>
-</li>
-<li><a href="#Second_Point_Header">2 Second Point Header</a></li>
-<li><a href="#Third_Point_Header">3 Third Point Header</a></li>
-</ul>
-</div>
--->
+
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -139,21 +143,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
@@ -171,16 +175,50 @@
       </div>
 
       <div class="row">
+
         <div class="col-sm-8">
-          <h2 class="mt-4">What We Do</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-          <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-          </p>
+          <h2 class="mt-4">Busch Campus</h2>
+          <hr>
+          <div>
+          <p>Busch campus started in 1935 after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
+At the time it was named the River Road Campus. A <a href="${pageContext.request.contextPath}/jsps/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, on land that was orignally a country club (golf course),
+and is where many athletic events were held until it was replaced with High Point Solution Stadium now. </p> 
+
+<div class="content">Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
+This is where the main math and engineering courses were taught. After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
+With this extra money, in 1962, Rutgers was able to relocate the College of Engineering to Busch Campus. At some point it was named University Heights Campus (idk why lol). Then in 1971, the campus was renamed Busch,
+after a millionare from edgewater named Charles L. Busch unexpecticly donated $10 million to the University for biological research after he died</div>
+<a href="#" class="show_hide" data-content="toggle-text">Read More</a>
+</div>
+
+	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+          
+          <h2 class="mt-4">Articles</h2>
+          <hr>
+          <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </div>
         <div class="col-sm-4">
-          <h2 class="mt-4">Contact Us</h2>
+        <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+<!--<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+  <li><a href="#First_Point_Header">1 First Point Header</a>
+  <ul>
+    <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
+    <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
+  </ul>
+</li>
+<li><a href="#Second_Point_Header">2 Second Point Header</a></li>
+<li><a href="#Third_Point_Header">3 Third Point Header</a></li>
+</ul>
+</div>
+        <h2 class="mt-4">Contact Us</h2>
           <address>
             <strong>Start Bootstrap</strong>
             <br>3481 Melrose Place
@@ -196,10 +234,7 @@
           </address>
         </div>
       </div>
-      <!-- /.row -->
-<h1>Busch Campus</h1>
-
-<p>*Busch Picture Slideshow here, that will grow big once you hover over it, dated</p>
+      -->
 </div>
 
 <div class="tab">
@@ -214,25 +249,22 @@
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>Busch campus started in 1935 after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
-At the time it was named the River Road Campus. A <a href="${pageContext.request.contextPath}/jsps/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, on land that was orignally a country club (golf course),
-and is where many athletic events were held until it was replaced with High Point Solution Stadium now.  Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
-This is where the main math and engineering courses were taught. After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
-With this extra money, in 1962, Rutgers was able to relocate the College of Engineering to Busch Campus. At some point it was named University Heights Campus (idk why lol). Then in 1971, the campus was renamed Busch,
-after a millionare from edgewater named Charles L. Busch unexpecticly donated $10 million to the University for biological research after he died</p>
-</div>
+  <p>Yikes</p>
+  </div>
 
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
   <ul>
-	<li>Every Thursday, you can check out the stars at the physics building</li>
+	<li>Every Thursday, if the skys are clear, you can check out the stars using the telescope at the physics building</li>
 	<li>A Rutgers Bus crashed into McCormick Suites in <a href="http://www.dailytargum.com/article/2001/09/bus-loses-control-crashes">2001</a>, no one was seriously injured</li>
 	<li>The Busch Campus Cove used to be an arcade</li>
 	<li>Back when the drinking age used to be 18 (the good ole days), gerlanda's used to be a bar</li>
 	<li>Actually apperntly all of the student centers used to have pubs</li>
 	<li>The Rutgers Tennis Courts used to have a giant bubble surrounding it, but it got damaged by hurricanes
 	and was never repaired.</li>
+	<li>The Busch Student Center used to have an Art Gallery</li>
+	<li> The old RechargeU on Busch is reportedly turning into an ESports Lounge</li>
 </ul> 
 </div>
 
@@ -243,15 +275,24 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-<table>
+   <form >
+
+</div>
+<div id="Dorm Rankings" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Dorm Rankings</h3>
+  <table>
     <tr>
     <th>Major</th>
-    <th>Rating</th>
-    <th>Your Score</th>
-    <th>Average</th>
-    <th>Total Votes</th>
+    <th>Ranking</th>
+    <th>Top Employers</th>
+    <th>Famous Alumni</th>
+    <th>Comments</th>
   </tr>
   <tr>
+  <td>Applied Sciences in Engineering</td>
+  <td>???</td>
+  
   <td><a href="#">Applied Sciences in Engineering</a></td>
   <td><fieldset class="rating" id="1">     
         <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
@@ -268,27 +309,46 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <td id="lets">0</td>
   <td id="see">0</td>
   <td id="money">0</td>
+  <td><input type="submit" name="submit" value="submit" ></td>
+  
   </tr>
     <tr>
   <td><a href="#">Electrial and Computer Engineering</a></td>
   <td id="1"><fieldset class="rating" id="2">     
-        <span class="1"><input type="radio" name="stars1" id="4_stars" value="5" >
+        <span class="1"><input type="radio" name="stars1" id="4_stars1" value="5" >
         <label class="stars" for="4_stars1">4 stars</label>
-        <input type="radio" name="stars" id="3_stars1" value="4" >
+        <input type="radio" name="stars1" id="3_stars1" value="4" >
         <label class="stars" for="3_stars1">3 stars</label>
-        <input type="radio" name="stars" id="2_stars1" value="3" >
+        <input type="radio" name="stars1" id="2_stars1" value="3" >
         <label class="stars" for="2_stars1">2 stars</label>
-        <input type="radio" name="stars" id="1_stars1" value="2" >
+        <input type="radio" name="stars1" id="1_stars1" value="2" >
         <label class="stars" for="1_stars1">1 star</label>
-        <input type="radio" name="stars" id="0_stars1" value="1" required>
+        <input type="radio" name="stars1" id="0_stars1" value="1" required>
         <label class="stars" for="0_stars1">0 star</label>
     </fieldset></td>
   <td  id="take">0</td>
   <td  id="two">0</td>
   <td  id="times">0</td>
   </tr>
+  <tr>
+    <td><a href="#">Civil Engineering</a></td>
+  <td id="1"><fieldset class="rating" id="3">     
+        <span class="3"><input type="radio" name="stars2" id="4_stars2" value="5" >
+        <label class="stars" for="4_stars2">4 stars</label>
+        <input type="radio" name="stars2" id="3_stars2" value="4" >
+        <label class="stars" for="3_stars2">3 stars</label>
+        <input type="radio" name="stars2" id="2_stars2" value="3" >
+        <label class="stars" for="2_stars2">2 stars</label>
+        <input type="radio" name="stars2" id="1_stars2" value="2" >
+        <label class="stars" for="1_stars2">1 star</label>
+        <input type="radio" name="stars2" id="0_stars2" value="1" required>
+        <label class="stars" for="0_stars2">0 star</label>
+    </fieldset></td>
+  <td id="we">0</td>
+  <td id="are">0</td>
+  <td id="farmers">0</td>
+  </tr>
   </table>
-  <form method="post">
 
 <table border="2">
 <tr>
@@ -297,25 +357,25 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <td>Gender</td>
 <td>First Name</td>
 <td>Last Name</td>
+<td>Value</td>
+<td>Value2</td>
 </tr>
 <tr><td>${ids}</td>
 <td>${item}</td>
 <td>${rating}</td>
 <td>${votes}</td>
 <td>${average}</td>
+<td>${value}</td>
+<td>${value2}</td>
 </tr>
 </table>
 </form>
-</div>
-<div id="Dorm Rankings" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Dorm Rankings</h3>
-  <p>Tokyo is the capital of Japan.</p>
 </div>
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Pictures</h3>
   <p>Tokyo is the capital of Japan.</p>
+</div>
 </div>
 
 <script>

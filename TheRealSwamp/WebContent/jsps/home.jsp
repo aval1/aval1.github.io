@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
    crossorigin=""/>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
    
    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
@@ -37,6 +38,14 @@ footer {
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="topnav">
 	<div class="logo">
 		<a href="${pageContext.request.contextPath}/Home" style="padding-top:0px;">
@@ -53,23 +62,26 @@ footer {
     <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+    <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <a href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<a href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
+	<a href="${pageContext.request.contextPath}/Douglass">Douglass</a>
+	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a></div>
 </div>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
-	
 </div>
 
-<div>
+<div styledddd="background-image: url(${pageContext.request.contextPath}/jsps/images/BehindLine.JPG); background-size:100%">
 <h1> Welcome to Prigmore's Swamp</h1>
 <p> I've been working on this crap for a couple weeks now. I really just made this for fun so I can learn some stuff about Rutgers
 I'm hoping to add a way to just get people to upload thier own stuff. The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
-</div>
-
+<!--
 <form action="${pageContext.request.contextPath}/" method="post">
 	<input type="text" name="username" placeholder="Username" class="border" size=50> 
 	<br><br>
@@ -100,15 +112,15 @@ I'm here to see that shit come back to life </p>
 </ul>
 
 </div>
-
-<div>
+ -->
+<div> 
 <h3> The Secrets of the Swamp</h3>
 <ul>
 	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....</li>
 	<li>Rutgers has a tomato named after itself</li>
 	<li>I'm pretty sure we discovered penicillin </li>
 	<li>You can print to any Rutgers printer from your laptop by 
-	downloading the RU Wireless print driver (google it).</li>
+	downloading an RU Wireless print <a href="https://www.cs.rutgers.edu/resources/printing-on-windows"> driver</a> </li>
 	<li>On print release stations, you can select multiple jobs for printing at the same time. 
 	Select the first job and drag down at an angle; the rest of your jobs will also be selected. 
 	It's magical. </li>
@@ -121,6 +133,10 @@ I'm here to see that shit come back to life </p>
 	<li><a href="#">Read More</a></li>
 </ul>
 </div>
+
+<div class="fb-page" data-href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal" data-tabs="events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+<blockquote cite="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal">
+Rutgers University</a></blockquote></div>
 
 <div id="mapid"></div>
 
@@ -145,6 +161,7 @@ I'm here to see that shit come back to life </p>
 </div>
 <div id="mapid"></div>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</div>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>
 </body>

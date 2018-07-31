@@ -8,6 +8,11 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -24,12 +29,15 @@
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<div>
+<div class="col-sm-8">
 <h1>College Avenue</h1>
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
 </div>
+
+<blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -57,7 +65,7 @@ I'm here to see that shit come back to life </p>
 	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
 	<li>Theres a Helipad on Vorhees Mall??</li>
 	<li>Scudder Hall, where Rutgers Hillel stands now</li>
-	
+	<li>Alexander Hamilton Trained his artillery in New Brunswick while waiting for George Washington at the battle of Trenton. </li>
 	</ul> 
 </div>
 

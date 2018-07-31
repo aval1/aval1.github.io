@@ -33,7 +33,8 @@ I'm here to see that shit come back to life </p>
 	<li>Class of 1899: Historical Marker for Alexander Hamilton Battle</li>
 	<li>Buncha Gates</li>
 	<li>ScoreBoard in the Barn Gym</li>
-	<li></li>
+	<li>Class of 1937: Plaza next to Stonier and Tinsley</li>
+	<li>Class of 1956: The Rutgers Clock at Barnes and Nobles</li>
 	<li></li>
 </ul> 
 </div>

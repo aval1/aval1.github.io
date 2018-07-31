@@ -7,7 +7,6 @@
   background-color: #000000;
   text-align: center;
 }
-
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -99,28 +98,31 @@ footer {
     text-decoration: none;
 }
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
+    background-color: #FF2400;
+    color: black;
     padding: 16px;
+    font-family:Times New Roman;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #FF2400;
 }
 
 .dropdown {
+	float:right;
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
+	text-align: center;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 150px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -128,14 +130,17 @@ footer {
 
 .dropdown-content a {
     color: black;
+    text-align: center;
     padding: 12px 16px;
     text-decoration: none;
     display:block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: #ddd;
+text-align: center;}
 
-.show {display:block;}
+.show {display:block;
+text-align: center;}
 
 .topnav .search-container {
   float: right;
