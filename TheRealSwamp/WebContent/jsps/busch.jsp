@@ -271,7 +271,23 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Map</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="${pageContext.request.contextPath}/jsps/images/wave.jpg" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="145,95,260,280" alt="Sun" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <area shape="circle" coords="1146,525,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+
+</body>
+</html>
+
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
