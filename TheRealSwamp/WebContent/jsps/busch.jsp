@@ -120,6 +120,233 @@ a.morelink {
 
 }
 
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
 </style>
 <body>
 
@@ -271,24 +498,42 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Map</h3>
-<!DOCTYPE html>
-<html>
-<body>
+
+<img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01" src="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <div id="caption"></div>
+</div>
 
 <p>Click on the sun or on one of the planets to watch it closer:</p>
 
-<img src="${pageContext.request.contextPath}/jsps/images/wave.jpg" alt="Planets" usemap="#planetmap">
+<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/ItzaBlue.jpg" id="myPopup"></span>
+</div>
+
+
+<img src="${pageContext.request.contextPath}/jsps/images/BuschMap.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
-  <area shape="rect" coords="145,95,260,280" alt="Sun" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
-  <area shape="circle" coords="1146,525,3" alt="Mercury" href="mercur.htm">
-  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+  <area id="1" onclick="myFunction()" shape="circle" coords="1145,525,10" alt="1" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <area id="2" shape="circle" coords="857,495,12" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="660,329,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="461,442,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="10" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="11" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="12" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="13" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
 </map>
-
-</body>
-</html>
-
 </div>
+
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
    <form >
@@ -395,6 +640,37 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 </div>
 
 <script>
+var modal = document.getElementById('myModal');
+
+//Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function myFunction(clicked_id) {
+	alert(clicked_id);
+	var x = clicked_id;
+	 var popup = document.getElementById("myPopup");
+	 popup.classList.toggle("show");
+	 modal.style.display = "block";
+ modalImg.src = "${pageContext.request.contextPath}/jsps/images/"+ x +".jpg";
+ captionText.innerHTML = this.alt;
+}
+
+//Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+//When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+ modal.style.display = "none";
+}
+
+//When the user clicks on div, open the popup
+/*function myFunction() {
+ var popup = document.getElementById("myPopup");
+ popup.classList.toggle("show");
+}*/
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
