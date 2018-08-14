@@ -518,19 +518,19 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <img src="${pageContext.request.contextPath}/jsps/images/BuschMap.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
-  <area id="1" onclick="myFunction()" shape="circle" coords="1145,525,10" alt="1" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
-  <area id="2" shape="circle" coords="857,495,12" href="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
   <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
   <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
   <area id="5" shape="circle" coords="660,329,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="461,442,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="739,479,14" class="popup" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="461,442,14" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="10" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="11" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="12" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="13" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
 
@@ -653,7 +653,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
- modalImg.src = "${pageContext.request.contextPath}/jsps/images/"+ x +".jpg";
+ modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch"+ x +".JPG";
  captionText.innerHTML = this.alt;
 }
 
