@@ -29,6 +29,40 @@ I'm here to see that shit come back to life </p>
 </div>
 <div>
 <h3>Class Gifts</h3>
+
+<table border="2">
+<tr>
+<td>Class Year</td>
+<td>Gift Name</td>
+<td>Description</td>
+<td>Picture</td>
+<td>Location</td>
+</tr>
+<tr>
+<td>1899</td>
+<td>Alexander Hamilton</td>
+<td>This marks the stand taken by Alexander Hamilton and his artillerymen atop the bluffs overlooking the Raritan River to delay the advance of General Cornwallis on December 1, 1776.
+His battery of cannon trained on t6he fording place held back the British advance on New Brunswick long enough for the remnants of Washington's battered army to decamp and continue their retreat through Princeton to Trenton and across the Delaware River to safety in Pennsylvania.</td>
+<td><img src="${pageContext.request.contextPath}/jsps/images/ClassGifts/Hamilton.jpg"></td>
+<td>location *link to map*</td>
+</tr>
+<tr>
+<td>1899</td>
+<td>Alexander Hamilton</td>
+<td>This marks the stand taken by Alexander Hamilton and his artillerymen atop the bluffs overlooking the Raritan River to delay the advance of General Cornwallis on December 1, 1776.
+His battery of cannon trained on t6he fording place held back the British advance on New Brunswick long enough for the remnants of Washington's battered army to decamp and continue their retreat through Princeton to Trenton and across the Delaware River to safety in Pennsylvania.</td>
+<td><img src="${pageContext.request.contextPath}/jsps/images/ClassGifts/Hamilton.jpg"></td>
+<td>location *link to map*</td>
+</tr>
+<td>${ids}</td>
+<td>${item}</td>
+<td>${rating}</td>
+<td>${votes}</td>
+<td>${average}</td>
+<td>${value}</td>
+<td>${value2}</td>
+</tr>
+</table>
   <ul>
 	<li>Class of 1899: Historical Marker for Alexander Hamilton Battle</li>
 	<li>Buncha Gates</li>

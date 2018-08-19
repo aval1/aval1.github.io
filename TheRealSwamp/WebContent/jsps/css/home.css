@@ -183,6 +183,14 @@ text-align: center;}
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
-  
+ 
 }
-
+.div1 {
+    width: 65%;
+    float: left;
+}
+.div2{
+	width:34%;
+	float:right;
+	 padding-left:10px;
+}

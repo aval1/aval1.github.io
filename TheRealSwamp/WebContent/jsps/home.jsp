@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
@@ -70,12 +70,12 @@ footer {
 	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
 	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
 	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
-	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a></div>
+	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a></div>
 </div>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<div styledddd="background-image: url(${pageContext.request.contextPath}/jsps/images/BehindLine.JPG); background-size:100%">
 <h1> Welcome to Prigmore's Swamp</h1>
 <p> I've been working on this crap for a couple weeks now. I really just made this for fun so I can learn some stuff about Rutgers
 I'm hoping to add a way to just get people to upload thier own stuff. The Long History of Rutgers and New Brunswick goes way back into the 1800s.
@@ -113,7 +113,9 @@ I'm here to see that shit come back to life </p>
 
 </div>
  -->
-<div> 
+<div class="div1">
+<blockquote class="embedly-card"><h4><a href="http://timeline.rutgers.edu/#event-royal-governor-signs-queens-college-charter">Our History | Rutgers 250</a></h4><p>Copyright 2016, Rutgers, The State University of New Jersey, an equal opportunity, affirmative action institution. All rights reserved. Contact RU-info at 732-445-info (4636) | Questions? Ask Colonel Henry or text us at 732-662-2664. | University Webmaster | Site Map</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 <h3> The Secrets of the Swamp</h3>
 <ul>
 	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....</li>
@@ -133,10 +135,10 @@ I'm here to see that shit come back to life </p>
 	<li><a href="#">Read More</a></li>
 </ul>
 </div>
-
-<div class="fb-page" data-href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal" data-tabs="events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+<div class="div2"> <div class="fb-page" data-href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal" data-tabs="events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
 <blockquote cite="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal">
 Rutgers University</a></blockquote></div>
+</div>
 
 <div id="mapid"></div>
 

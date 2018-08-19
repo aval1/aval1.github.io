@@ -21,9 +21,6 @@
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<div>
-<iframe src="http://redditjs.com/r/Rutgers/hot/month?cssTheme=light&amp;embedId=449444#normal" style="height: 2000px; width: 900px; margin: 0px auto; display: block; top: 0px; left: 0px; border: 2px solid rgb(95, 153, 207); overflow: auto; z-index: 1; position: relative;"></iframe>
-</div>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -39,7 +36,12 @@
   <h3>Overview</h3>
   <p>London is the capital city of England.</p>
 </div>
-
+<div class="sites-attachments-inner-div">
+<div class="sites-attachments-name">
+<a href="https://docs.google.com/spreadsheets/d/1DwbXH2PpuL6UY_UzHqq18_nwjbMRIUgCN2w1r6z0l-0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Fall 2018 Budget .pdf</a> 
+<div class="sites-translucent">(702k)</div></div>
+<div class="sites-attachments-author">RUSA Allocations, 
+<div class="sites-translucent">Apr 23, 2018, 12:08 AM</div></div></div>
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>

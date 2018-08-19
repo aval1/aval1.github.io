@@ -361,7 +361,7 @@ a.morelink {
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-
+<!--
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -369,21 +369,22 @@ a.morelink {
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
+        -->
+          <!-- Slide One - Set the background image for this slide in the line below
           <div class="carousel-item active" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <!-- Slide Two - Set the background image for this slide in the line below
           <div class="carousel-item" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <!-- Slide Three - Set the background image for this slide in the line below
           <div class="carousel-item" style="background-image: url('http://placehold.it/1100x1080')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
@@ -399,7 +400,7 @@ a.morelink {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
 
       <div class="row">
 
@@ -409,7 +410,7 @@ a.morelink {
           <div>
           <p>Busch campus started in 1935 after a 256-acre tract was purchased by the then president <a href="https://www.rutgers.edu/about/history/past-presidents/robert-c-clothier">Robert C. Clothier</a>. 
 At the time it was named the River Road Campus. A <a href="${pageContext.request.contextPath}/jsps/images/busc.jpg" class="preview"> stadium </a> was completed in 1938, on land that was orignally a country club (golf course),
-and is where many athletic events were held until it was replaced with High Point Solution Stadium now. </p> 
+and is where many athletic events were held until it was replaced with High Point Solution Stadium now. <sup><a href="https://en.wikipedia.org/wiki/Busch_Campus_of_Rutgers_University#cite_note-2"  target="_blank">[1]</a></sup></p> 
 
 <div class="content">Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
 This is where the main math and engineering courses were taught. After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
@@ -522,7 +523,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
   <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
   <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="660,329,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="661,329,14" onclick="myFunction(this.id)" href="#">
   <area id="6" shape="circle" coords="461,442,14" onclick="myFunction(this.id)" href="#">
   <area id="7" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
   <area id="8" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
@@ -648,12 +649,11 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
 function myFunction(clicked_id) {
-	alert(clicked_id);
 	var x = clicked_id;
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
- modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch"+ x +".JPG";
+ modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
  captionText.innerHTML = this.alt;
 }
 
