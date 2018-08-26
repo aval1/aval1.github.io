@@ -24,9 +24,10 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/dropdown.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
+<!--<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>  -->
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
@@ -39,24 +40,6 @@
 	color:#fff;
 	}
 
-#toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
-}
-
-.toc_title {
-    font-weight: 700;
-    text-align: center;
-}
-
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
-}
 .sidenav {
     height: 300px;
     width: 400px;
@@ -83,7 +66,6 @@
 .main {
     margin-left: 160px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -106,10 +88,6 @@ div#right-sidebar{
   width:<length>;
   height:100%;
  }
- 
-.comment {
-
-}
 
 a.morelink {
 	text-decoration:none;
@@ -357,9 +335,31 @@ a.morelink {
 		</a>
 	</div>
 	<a href="#">Alerts</a>
-	<a href="#">Help</a>
+	<div class="search-container">
+    <!-- <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+  </div>
+    <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <a href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<a href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
+	<a href="${pageContext.request.contextPath}/Douglass">Douglass</a>
+	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<a href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
+</div>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
+
 
 <!--
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -477,7 +477,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>Yikes</p>
+  <p>FInd the fucking gnomes on Busch</p>
   </div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -552,10 +552,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
     <th>Comments</th>
   </tr>
   <tr>
-  <td>Applied Sciences in Engineering</td>
-  <td>???</td>
-  
-  <td><a href="#">Applied Sciences in Engineering</a></td>
+  <td><a href="#">Busch Dining Hall</a></td>
   <td><fieldset class="rating" id="1">     
         <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
         <label class="stars" for="4_stars">4 stars</label>
@@ -575,7 +572,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   
   </tr>
     <tr>
-  <td><a href="#">Electrial and Computer Engineering</a></td>
+  <td><a href="#">Livingston Dining Commons</a></td>
   <td id="1"><fieldset class="rating" id="2">     
         <span class="1"><input type="radio" name="stars1" id="4_stars1" value="5" >
         <label class="stars" for="4_stars1">4 stars</label>
@@ -593,7 +590,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <td  id="times">0</td>
   </tr>
   <tr>
-    <td><a href="#">Civil Engineering</a></td>
+    <td><a href="#">Brower Commons</a></td>
   <td id="1"><fieldset class="rating" id="3">     
         <span class="3"><input type="radio" name="stars2" id="4_stars2" value="5" >
         <label class="stars" for="4_stars2">4 stars</label>
@@ -609,6 +606,24 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <td id="we">0</td>
   <td id="are">0</td>
   <td id="farmers">0</td>
+  </tr>
+  <tr>
+      <td><a href="#">Neilson Dining Hall</a></td>
+  <td id="1"><fieldset class="rating" id="4">     
+        <span class="4"><input type="radio" name="stars3" id="4_stars3" value="5" >
+        <label class="stars" for="4_stars3">4 stars</label>
+        <input type="radio" name="stars3" id="3_stars3" value="4" >
+        <label class="stars" for="3_stars3">3 stars</label>
+        <input type="radio" name="stars3" id="2_stars3" value="3" >
+        <label class="stars" for="2_stars3">2 stars</label>
+       <input type="radio" name="stars3" id="1_stars3" value="2" >    
+        <label class="stars" for="1_stars3">1 star</label>
+        <input type="radio" name="stars3" id="0_stars3" value="1" required>
+        <label class="stars" for="0_stars3">0 star</label>
+    </fieldset></td>
+  <td id="fin">0</td>
+  <td id="ish">0</td>
+  <td id="er">0</td>
   </tr>
   </table>
 
@@ -670,6 +685,25 @@ span.onclick = function() {
  var popup = document.getElementById("myPopup");
  popup.classList.toggle("show");
 }*/
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;

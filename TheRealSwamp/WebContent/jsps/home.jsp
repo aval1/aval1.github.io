@@ -71,7 +71,10 @@ footer {
 	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
 	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
 	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
-	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a></div>
+	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<a href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
+	
 </div>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
@@ -96,7 +99,7 @@ I'm here to see that shit come back to life </p>
 	</c:if>
 	
 </c:if>
-
+-->
 <div>
 <h3>Choose your Campus</h3>
 <ul>
@@ -109,10 +112,12 @@ I'm here to see that shit come back to life </p>
 	<li><a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a></li>
 	<li><a href="${pageContext.request.contextPath}/Timeline">Timeline</a></li>
 	<li><a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a></li>
+	<li><a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a></li>
+	<li><a href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a></li>
+	<li><a href="${pageContext.request.contextPath}/Voting">Voting</a></li>
 </ul>
 
 </div>
- -->
 <div class="div1">
 <blockquote class="embedly-card"><h4><a href="http://timeline.rutgers.edu/#event-royal-governor-signs-queens-college-charter">Our History | Rutgers 250</a></h4><p>Copyright 2016, Rutgers, The State University of New Jersey, an equal opportunity, affirmative action institution. All rights reserved. Contact RU-info at 732-445-info (4636) | Questions? Ask Colonel Henry or text us at 732-662-2664. | University Webmaster | Site Map</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>

@@ -25,58 +25,19 @@
 		</a>
 	</div>
 	<a href="#">Alerts</a>
-	<div class="search-container">
-    <!-- <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form> -->
-  </div>
-    <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
-    <a href="${pageContext.request.contextPath}/Busch">Busch</a>
-	<a href="${pageContext.request.contextPath}/Livingston">Livingston</a>
-	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
-	<a href="${pageContext.request.contextPath}/Douglass">Douglass</a>
-	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
-	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
-	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
-	<a href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
-	<a href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
-	<a href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
-	<a href="${pageContext.request.contextPath}/Voting">Voting</a></div>
-</div>
+	<a href="#">Help</a>
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<div class="div1">
-<h1>College Avenue History</h1>
+<div class="col-sm-8">
+<h1>College Avenue</h1>
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
-
-<h3> The Secrets of the Swamp</h3>
-<ul>
-	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
-	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
-	<li>The cure of TB was found at Rutgers 1943, by Albert Schatz, under the supervision of Nobel Prize winner, Selman Waksman <sup><a href="https://en.wikipedia.org/wiki/Streptomycin#History"  target="_blank">[s]</a></sup></li>
-	<li>Selman Waksman discovered the ability to discover antibiotics <sup><a href="https://news.rutgers.edu/feature/selman-waksman-rutgers-alumnus-researcher-and-nobel-prize-winner-developed-system-discover/20160417#.W4Lu_uhKjIU"  target="_blank">[s]</a></sup></li>
-	<li>You can print to any Rutgers printer from your laptop by downloading an RU Wireless print <a href="https://www.cs.rutgers.edu/resources/printing-on-windows"> driver</a> </li>
-	<li>On print release stations, you can select multiple jobs for printing at the same time. 
-	Select the first job and drag down at an angle; the rest of your jobs will also be selected. It's magical. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>Rutgers offers personal training and massages for very  cheap-- much cheaper than you'll find once you leave. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>There's a bus that goes to NYC (Port Authority Bus Terminal) and tickets are around $17 round trip. It's cheaper than the $26 round trip train fare. 
-	You have to buy them from the SABO, in the bottom floor of the SAC.  <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>Theres an office at records hall that's unlocked</li>
-	<li></li>
-	<li><a href="#">Read More</a></li>
-</ul>
 </div>
 
-<div class="div2"> Hey there
-</div>
-
+<blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -99,8 +60,8 @@ I'm here to see that shit come back to life </p>
   <h3>Fun Facts</h3>
     <ul>
 	<li>Mine Street - used to be an Actual Copper <a href="https://assets.rbl.ms/14645584/980x.png">Mine</a> - Link to picture </li>
-	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate <sup><a href="http://i-am.rutgers.edu/2013/09/old-queens-gate/"  target="_blank">[s]</a></sup></li>
-	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. Legend has it... that he has never wistled <sup><a href="http://i-am.rutgers.edu/2013/10/scarlet-lore-willy-the-silent/"  target="_blank">[s]</a></sup> <li>
+	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate</li>
+	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. It has never wistled<li>
 	<li>There is a graffiti Path Between Busch and College Ave behind the park where the River Dorms are</li>
 	<li>Theres a Helipad on Vorhees Mall??</li>
 	<li>Scudder Hall, where Rutgers Hillel stands now</li>
@@ -115,16 +76,21 @@ I'm here to see that shit come back to life </p>
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <script src="${pageContext.request.contextPath}/jsps/js/collegeave.js"></script>
 </div>
-<div id="Major Rankings" class="tabcontent">
+<div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3> Building List</h3>
-  <p>
-  
-  </p>
-  
-  <p>Please rate this item:</p>
-    <fieldset class="rating">     
-        <span><input type="radio" name="stars" id="4_stars" value="5" >
+  <h3>Dorm Rankings</h3>
+  <table>
+    <tr>
+    <th>Major</th>
+    <th>Ranking</th>
+    <th>Top Employers</th>
+    <th>Famous Alumni</th>
+    <th>Comments</th>
+  </tr>
+  <tr>
+  <td><a href="#">Busch Dining Hall</a></td>
+  <td><fieldset class="rating" id="1">     
+        <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
         <label class="stars" for="4_stars">4 stars</label>
         <input type="radio" name="stars" id="3_stars" value="4" >
         <label class="stars" for="3_stars">3 stars</label>
@@ -134,22 +100,93 @@ I'm here to see that shit come back to life </p>
         <label class="stars" for="1_stars">1 star</label>
         <input type="radio" name="stars" id="0_stars" value="1" required>
         <label class="stars" for="0_stars">0 star</label>
-        <span  class="label"> Rating: </span>
-    </fieldset>
-    
-      	 <table>
+    </fieldset></td>
+  <td id="lets">0</td>
+  <td id="see">0</td>
+  <td id="money">0</td>
+  <td><input type="submit" name="submit" value="submit" ></td>
+  
+  </tr>
+    <tr>
+  <td><a href="#">Livingston Dining Commons</a></td>
+  <td id="1"><fieldset class="rating" id="2">     
+        <span class="1"><input type="radio" name="stars1" id="4_stars1" value="5" >
+        <label class="stars" for="4_stars1">4 stars</label>
+        <input type="radio" name="stars1" id="3_stars1" value="4" >
+        <label class="stars" for="3_stars1">3 stars</label>
+        <input type="radio" name="stars1" id="2_stars1" value="3" >
+        <label class="stars" for="2_stars1">2 stars</label>
+        <input type="radio" name="stars1" id="1_stars1" value="2" >
+        <label class="stars" for="1_stars1">1 star</label>
+        <input type="radio" name="stars1" id="0_stars1" value="1" required>
+        <label class="stars" for="0_stars1">0 star</label>
+    </fieldset></td>
+  <td  id="take">0</td>
+  <td  id="two">0</td>
+  <td  id="times">0</td>
+  </tr>
   <tr>
-<td id="lets"><a href="https://ruadphi.wixsite.com/alpha-delta-phi-ru" target="_blank" rel="noopener">Alpha Delta Phi</a></td>
-<td id="see"><a href="http://rutgersaepi.org/" target="_blank" rel="noopener">Alpha Epsilon Pi</a></td>
-<td id="money"><a href="http://akl.org/">Alpha Kappa Lambda</a></td>
+    <td><a href="#">Brower Commons</a></td>
+  <td id="1"><fieldset class="rating" id="3">     
+        <span class="3"><input type="radio" name="stars2" id="4_stars2" value="5" >
+        <label class="stars" for="4_stars2">4 stars</label>
+        <input type="radio" name="stars2" id="3_stars2" value="4" >
+        <label class="stars" for="3_stars2">3 stars</label>
+        <input type="radio" name="stars2" id="2_stars2" value="3" >
+        <label class="stars" for="2_stars2">2 stars</label>
+        <input type="radio" name="stars2" id="1_stars2" value="2" >
+        <label class="stars" for="1_stars2">1 star</label>
+        <input type="radio" name="stars2" id="0_stars2" value="1" required>
+        <label class="stars" for="0_stars2">0 star</label>
+    </fieldset></td>
+  <td id="we">0</td>
+  <td id="are">0</td>
+  <td id="farmers">0</td>
+  </tr>
+  <tr>
+      <td><a href="#">Neilson Dining Hall</a></td>
+  <td id="1"><fieldset class="rating" id="4">     
+        <span class="4"><input type="radio" name="stars3" id="4_stars3" value="5" >
+        <label class="stars" for="4_stars3">4 stars</label>
+        <input type="radio" name="stars3" id="3_stars3" value="4" >
+        <label class="stars" for="3_stars3">3 stars</label>
+        <input type="radio" name="stars3" id="2_stars3" value="3" >
+        <label class="stars" for="2_stars3">2 stars</label>
+       <input type="radio" name="stars3" id="1_stars3" value="2" >    
+        <label class="stars" for="1_stars3">1 star</label>
+        <input type="radio" name="stars3" id="0_stars3" value="1" required>
+        <label class="stars" for="0_stars3">0 star</label>
+    </fieldset></td>
+  <td id="fin">0</td>
+  <td id="ish">0</td>
+  <td id="er">0</td>
+  </tr>
+  </table>
+
+<table border="2">
+<tr>
+<td>user ID</td>
+<td>Birthday</td>
+<td>Gender</td>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Value</td>
+<td>Value2</td>
+</tr>
+<tr><td>${ids}</td>
+<td>${item}</td>
+<td>${rating}</td>
+<td>${votes}</td>
+<td>${average}</td>
+<td>${value}</td>
+<td>${value2}</td>
 </tr>
 </table>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Dorm Rankings</h3>
-  <blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+  <p>Tokyo is the capital of Japan.</p>
 </div>
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>

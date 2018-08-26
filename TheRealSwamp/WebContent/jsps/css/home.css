@@ -194,3 +194,8 @@ text-align: center;}
 	float:right;
 	 padding-left:10px;
 }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

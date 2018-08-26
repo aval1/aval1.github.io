@@ -4,12 +4,15 @@ $(document).ready(function(){
 var counter = 1;
 var counterb=1;
 var counterc=1;
+var counterd=1;
 var total = 0;
 var totalb=0;
 var totalc=0;
+var totald=0;
 var average = 0;
 var averageb=0;
 var averagec=0;
+var averaged=0;
 var radio = "";
 
 
@@ -58,5 +61,13 @@ $("input").change(function(event){
     document.getElementById("are").innerHTML = averagec;
     document.getElementById("farmers").innerHTML = counterc;
     }
+         if(radio=="4_stars3"||radio=="3_stars3"||radio=="2_stars3"||radio=="1_stars3"||radio=="0_stars3"){
+        	 totald += parseFloat(userRating);
+                 counterd = counterd+1;
+        averaged = totald/counterd;
+        document.getElementById("fin").innerHTML =userRating;
+        document.getElementById("ish").innerHTML = averaged;
+        document.getElementById("er").innerHTML = counterd;
+        }
     });
 });
