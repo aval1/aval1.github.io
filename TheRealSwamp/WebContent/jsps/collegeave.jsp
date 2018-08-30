@@ -50,33 +50,22 @@
 	<a href="${pageContext.request.contextPath}/Contact">Contact Us</a>
 </div>
 
-<div class="div1">
 <h1>College Avenue History</h1>
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
 
-<h3> The Secrets of the Swamp</h3>
-<ul>
-	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
-	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
-	<li>The cure of TB was found at Rutgers 1943, by Albert Schatz, under the supervision of Nobel Prize winner, Selman Waksman <sup><a href="https://en.wikipedia.org/wiki/Streptomycin#History"  target="_blank">[s]</a></sup></li>
-	<li>Selman Waksman discovered the ability to discover antibiotics <sup><a href="https://news.rutgers.edu/feature/selman-waksman-rutgers-alumnus-researcher-and-nobel-prize-winner-developed-system-discover/20160417#.W4Lu_uhKjIU"  target="_blank">[s]</a></sup></li>
-	<li>You can print to any Rutgers printer from your laptop by downloading an RU Wireless print <a href="https://www.cs.rutgers.edu/resources/printing-on-windows"> driver</a> </li>
-	<li>On print release stations, you can select multiple jobs for printing at the same time. 
-	Select the first job and drag down at an angle; the rest of your jobs will also be selected. It's magical. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>Rutgers offers personal training and massages for very  cheap-- much cheaper than you'll find once you leave. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>There's a bus that goes to NYC (Port Authority Bus Terminal) and tickets are around $17 round trip. It's cheaper than the $26 round trip train fare. 
-	You have to buy them from the SABO, in the bottom floor of the SAC.  <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
-	<li>Theres an office at records hall that's unlocked</li>
-	<li></li>
-	<li><a href="#">Read More</a></li>
-</ul>
+  	<hr style="height:1px;border:none;color:#333;background-color:#333;">
+          <div class="div1">
+          <h2>Articles</h2>
+          <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </div>
 
-<div class="div2"> Hey there
+<div class="div2">
+<blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </div>
-
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -98,6 +87,17 @@ I'm here to see that shit come back to life </p>
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
     <ul>
+    	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
+	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
+	<li>The cure of TB was found at Rutgers 1943, by Albert Schatz, under the supervision of Nobel Prize winner, Selman Waksman <sup><a href="https://en.wikipedia.org/wiki/Streptomycin#History"  target="_blank">[s]</a></sup></li>
+	<li>Selman Waksman discovered the ability to discover antibiotics <sup><a href="https://news.rutgers.edu/feature/selman-waksman-rutgers-alumnus-researcher-and-nobel-prize-winner-developed-system-discover/20160417#.W4Lu_uhKjIU"  target="_blank">[s]</a></sup></li>
+	<li>You can print to any Rutgers printer from your laptop by downloading an RU Wireless print <a href="https://www.cs.rutgers.edu/resources/printing-on-windows"> driver</a> </li>
+	<li>On print release stations, you can select multiple jobs for printing at the same time. 
+	Select the first job and drag down at an angle; the rest of your jobs will also be selected. It's magical. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
+	<li>Rutgers offers personal training and massages for very  cheap-- much cheaper than you'll find once you leave. <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
+	<li>There's a bus that goes to NYC (Port Authority Bus Terminal) and tickets are around $17 round trip. It's cheaper than the $26 round trip train fare. 
+	You have to buy them from the SABO, in the bottom floor of the SAC.  <sup><a href="https://www.reddit.com/r/rutgers/comments/3k8ww0/little_rutgers_things_i_wish_i_knew_earlier/"  target="_blank">[s]</a></sup></li>
+	<li>Theres an office at records hall that's unlocked</li>
 	<li>Mine Street - used to be an Actual Copper <a href="https://assets.rbl.ms/14645584/980x.png">Mine</a> - Link to picture </li>
 	<li>If you walk underneath the Graduation Arch more than twice, you will not graduate <sup><a href="http://i-am.rutgers.edu/2013/09/old-queens-gate/"  target="_blank">[s]</a></sup></li>
 	<li>William the Silent in Vorhees Mall only wistles when a virgin walks past it. Legend has it... that he has never wistled <sup><a href="http://i-am.rutgers.edu/2013/10/scarlet-lore-willy-the-silent/"  target="_blank">[s]</a></sup> <li>

@@ -9,6 +9,7 @@
 }
 /* Style the tab */
 .tab {
+	position:relative;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -186,12 +187,13 @@ text-align: center;}
  
 }
 .div1 {
-    width: 65%;
+    width: 50%;
     float: left;
 }
 .div2{
-	width:34%;
+	width:50%;
 	float:right;
+	position:absolute;
 	 padding-left:10px;
 }
 .row:after {

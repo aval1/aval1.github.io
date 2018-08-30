@@ -48,6 +48,24 @@
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
 </div>
+
+<form action="${pageContext.request.contextPath}/ClassGifts" method="post">
+<p>Class Year: <input type="text" name="classYear" value="${classYear}"/></p>
+<p>Gift Name: <input type="text" name="giftName" value="${giftName}"/></p>
+<p>Info: <input type="text" name="info" value="${info}"/></p>
+<p>Location: <input type="text"  name="location" value="${location}"/></p>
+<p>Extra: <input type="text" name="extra" value="${extra}"/></p>
+<p>Strategy: 
+	<select name="strategy">
+		<option value="Moderate">Moderate </option>
+		<option value="Aggressive">Aggressive</option>
+		<option value="Conservative">Conservative</option>
+	</select>
+</p>
+	<br> <br>
+	<input type="submit" name="Submit" value="submit" > 
+</form>
+
 <div>
 <h3>Class Gifts</h3>
 <p>https://muckgers.com/then-and-now-a-photographic-study-of-rutgers-college-avenue-campus-part-1-9335c35d0142 </p>

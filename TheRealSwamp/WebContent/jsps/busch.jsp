@@ -432,6 +432,9 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
+  
+   <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </div>
 <!--<div id="toc_container">
 <p class="toc_title">Contents</p>
@@ -512,7 +515,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <p>Click on the sun or on one of the planets to watch it closer:</p>
 
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/ItzaBlue.jpg" id="myPopup"></span>
+  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
 </div>
 
 
@@ -523,15 +526,18 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
   <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
   <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="661,329,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="461,442,14" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="661,325,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="462,451,14" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="473,405,14" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="330,350,14" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="275,395,14" onclick="myFunction(this.id)" href="#">
+  <area id="10" shape="circle" coords="235,369,14" onclick="myFunction(this.id)" href="#">
+  <area id="11" shape="circle" coords="249,345,14" onclick="myFunction(this.id)" href="#">
+  <area id="12" shape="circle" coords="237,315,14" onclick="myFunction(this.id)" href="#">
+  <area id="13" shape="circle" coords="174,277,14" onclick="myFunction(this.id)" href="#">
+  <area id="14" shape="circle" coords="144,406,14" onclick="myFunction(this.id)" href="#">
+  <area id="15" shape="circle" coords="828,1132,14" onclick="myFunction(this.id)" href="#">
+  <area id="16" shape="circle" coords="548,1241,14" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
 
