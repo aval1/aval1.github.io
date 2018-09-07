@@ -220,16 +220,12 @@ It seems that a lot of these historical tidbits have been lost in the translatio
 I'm here to see that shit come back to life </p>
 
   	<hr style="height:1px;border:none;color:#333;background-color:#333;">
-          <div class="div1">
           <h2>Articles</h2>
           <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-</div>
 
-<div class="div2">
 <blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-</div>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -376,7 +372,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
-modalImg.src = "${pageContext.request.contextPath}/jsps/images/CollegeAve/"+ x +".JPG";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/CollegeAve/"+ x +".jpg";
 captionText.innerHTML = this.alt;
 }
 
