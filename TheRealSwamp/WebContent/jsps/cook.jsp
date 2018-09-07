@@ -74,6 +74,12 @@ close(c);
   <h3>Fun Facts</h3>
   <ul>
   	<li>Secret garden on Cook</li>
+  	<li>Douggie</li>
+  	
+  	  <li>There is an abandoned pool in Jamison Hall. It is rumored that someone drowned in that pool.
+  It is currently being used for storage by Caberat theather</li>
+  <li>There is an abandoned bowling alley under Loore Classroom Building</li>
+  <li>Corwin Houses on Douglass?</li>
   </ul>
 </div>
 

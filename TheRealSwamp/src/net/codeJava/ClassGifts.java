@@ -37,6 +37,26 @@ public class ClassGifts extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		/*Connection conn = null;
+		 PreparedStatement stmt = null;
+	    String query = "select * from  classgifts";
+	    try {
+	    	Class.forName("com.mysql.jdbc.Driver");
+
+		    conn = DriverManager.getConnection(DB_URL,USER,PASS);
+	        ResultSet rs = stmt.executeQuery(query);
+	        while (rs.next()) {
+	            String classYear = rs.getString("classYear");
+	            String giftName = rs.getString("giftName");
+	            String info = rs.getString("info");
+	            String location = rs.getString("location");
+	            String extra = rs.getString("extra");
+	        }
+	        conn.close();
+   } catch (Exception e) {
+       e.printStackTrace();
+   }
+   */
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		request.getRequestDispatcher("/jsps/classgifts.jsp").forward(request, response);
 	}

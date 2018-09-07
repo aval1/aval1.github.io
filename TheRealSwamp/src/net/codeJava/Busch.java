@@ -96,6 +96,67 @@ public class Busch extends HttpServlet {
 		//String value = request.getParameter("stars");
 		
 		//request.setAttribute("value",value);
+		String button  = request.getParameter("Submit");
+		String ratingVal = request.getParameter("stars");
+		String giftName = request.getParameter("giftName");
+		String username=(String) request.getSession().getAttribute("username");
+		String info=request.getParameter("info");
+		String location=request.getParameter("location");
+		String extra =request.getParameter("extra");
+		
+		//User hit submit
+		if("submit".equals(button)) {
+			
+			 Connection conn = null;
+			 PreparedStatement stmt = null;
+			 
+			 try{
+			      Class.forName("com.mysql.jdbc.Driver");
+
+			      conn = DriverManager.getConnection(DB_URL,USER,PASS);
+			      
+			      //Timestamp ts=new Timestamp(System.currentTimeMillis());
+			      
+			      //Create a new entry in the user table
+			      String sql;
+			      sql = "INSERT INTO classgifts (classYear, giftName, info, location, extra)"
+				      		+ "VALUES ('" + ratingVal + "', '" + giftName + "', '" + info + "', '" + location + "', '" + extra + "')";
+			      stmt=conn.prepareStatement(sql);
+			      stmt.executeUpdate();
+
+			      stmt.close();
+			      conn.close();
+			      
+		    	  request.setAttribute("success",true);
+		    	
+		    	  //Enter username into http session
+		    	 // HttpSession session=request.getSession();
+		    	  //session.setAttribute("username", username);
+		    	  
+		    	  //redirect to the league page
+		    	  response.sendRedirect(request.getContextPath()+ "/Busch");
+			      
+			      
+			   }catch(SQLException se){
+			      se.printStackTrace();
+			      request.setAttribute("success",false);
+			      request.getRequestDispatcher("/jsps/busch.jsp").forward(request, response);	
+			   }catch(Exception e){
+			      e.printStackTrace();
+			   }finally{
+			      try{
+			         if(stmt!=null)
+			            stmt.close();
+			      }catch(SQLException se2){
+			      }
+			      try{
+			         if(conn!=null)
+			            conn.close();
+			      }catch(SQLException se){
+			         se.printStackTrace();
+			      }
+			   }
+		}
+	}
 
 	}
-}

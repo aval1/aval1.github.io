@@ -38,9 +38,10 @@ public class Contact extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         // reads form fields
+    	String sender = request.getParameter("sender");
         String recipient = "andyval4@gmail.com";
         String subject = request.getParameter("subject");
-        String content = request.getParameter("content");
+        String content = request.getParameter("content") + "       "+ request.getParameter("sender");
  
         String resultMessage = "";
  

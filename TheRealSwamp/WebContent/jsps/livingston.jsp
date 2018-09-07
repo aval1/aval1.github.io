@@ -51,6 +51,8 @@ I'm here to see that shit come back to life </p>
 	<li>It used to be called "Toliet" (See people can be mean but creative)</li>
 	<li>Lucy Stone Hall was designed by artitects so that it could not be occupied at once by protesting students, which is why it is so seperate<li>
 	<li>If you stand in the center of the Livi circle by the Student Center and clap, you can hear a squeak.</li>
+	<li>Theres are some time capsules on busch</li>
+	<li>Something about Camp Kilmer</li>
 	</ul> 
 </div>
 

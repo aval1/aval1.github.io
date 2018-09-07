@@ -23,11 +23,12 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/dropdown.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
-<!--<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>  -->
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
@@ -326,6 +327,14 @@ a.morelink {
     }
 }
 </style>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <body>
 
 <div class="topnav">
@@ -432,9 +441,12 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
   <a href="#contact">Contact</a>
+  <!-- <div class="fb-page" data-href="https://www.facebook.com/search/events/?q=busch%20campus" data-tabs="events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+<blockquote cite="https://www.facebook.com/search/events/?q=busch%20campus" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal">
+Rutgers University</a></blockquote></div>  -->
   
-   <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+  <!-- <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> -->
 </div>
 <!--<div id="toc_container">
 <p class="toc_title">Contents</p>
@@ -480,7 +492,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>FInd the fucking gnomes on Busch</p>
+  <p>FInd the fucking gnomes on Buschh</p>
   </div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -501,7 +513,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Map</h3>
+  <h3>Scupture Map</h3>
 
 <img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="width:100%;max-width:300px">
 
@@ -548,7 +560,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Dorm Rankings</h3>
+  <h3>Dorm Rankings	</h3>
   <table>
     <tr>
     <th>Major</th>
@@ -559,7 +571,9 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   </tr>
   <tr>
   <td><a href="#">Busch Dining Hall</a></td>
-  <td><fieldset class="rating" id="1">     
+  <td>
+   <form action="${pageContext.request.contextPath}/Busch" method="post">
+  <fieldset class="rating" id="1">     
         <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
         <label class="stars" for="4_stars">4 stars</label>
         <input type="radio" name="stars" id="3_stars" value="4" >
@@ -570,7 +584,8 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
         <label class="stars" for="1_stars">1 star</label>
         <input type="radio" name="stars" id="0_stars" value="1" required>
         <label class="stars" for="0_stars">0 star</label>
-    </fieldset></td>
+    </fieldset>
+    </form></td>
   <td id="lets">0</td>
   <td id="see">0</td>
   <td id="money">0</td>
@@ -634,7 +649,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   </table>
 
 <table border="2">
-<tr>
+"WebContent/jsps/livingston.jsp"<tr>
 <td>user ID</td>
 <td>Birthday</td>
 <td>Gender</td>
@@ -730,7 +745,6 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>   
-<script src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 </div>
 
 <div>
-<h1>Helpful Infomation about Rutgers Classes</h1>
+<h1>https://www.reddit.com/r/rutgers/wiki/index Helpful Infomation about Rutgers Classes</h1>
 <p>Helpful Links: </p>
 <ul>
 <li>Course Sniper - If you're trying to get into a class that is full during add/drop period: </li>

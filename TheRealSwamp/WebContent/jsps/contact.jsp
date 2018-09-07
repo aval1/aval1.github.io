@@ -22,20 +22,20 @@
 </div>
 
 <div>
-<h1>Busch Campus</h1>
-<p>Busch campus startedafter a 256-acre tract was purchased by the then president Robert C. Clothier (sound familar?), and was named the River Road Campus. 
-A stadium was completed in 1938 in land that was orignally a country club (hence the 18 hole golf course being on busch that is still used today),
-and is where many athletic events were held until ****more information about stadium here*****
-
+<h1>Contact Us</h1>
+<p>This page is very much a work in progress. I am defintely missing a bunch of facts and cool things about rutgers. I am learning every day.
+If people have facts or news that they want displayed on the website please feel free to send them. I only ask that a web source or some kind of reference be attached.
+Also I am an engineering major...spelling is not my first language so please point out any of those mistakes. On that note I am looking for help (personally someone who doesn't
+just want to slap this on their resume.) 
 </p>
 </div>
 
 <form action="Contact" method="post">
         <table border="0" width="35%" align="center">
-            <caption><h2>Send New E-mail</h2></caption>
+            <caption><h2>Contact Us</h2></caption>
             <tr>
-                <td width="50%">Recipient address </td>
-                <td><input type="text" name="recipient" size="50"/></td>
+                <td width="50%">Email</td>
+                <td><input type="text" name="sender" size="50"/></td>
             </tr>
             <tr>
                 <td>Subject </td>
@@ -51,16 +51,6 @@ and is where many athletic events were held until ****more information about sta
         </table>
          
     </form>
-<c:if test="${not empty success}" >
-	<c:if test="${success}" >
-		<text>Account Creation Was Successful </text>
-	</c:if>
-	
-	<c:if test="${not success}" >
-		<text>Account Creation Failed </text>
-	</c:if>
-	
-</c:if>
 <footer>Copyright &copy; Big Pumba Studios</footer>
 </body>
 </html>

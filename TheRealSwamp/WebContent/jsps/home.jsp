@@ -65,8 +65,7 @@ footer {
     <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
     <a href="${pageContext.request.contextPath}/Busch">Busch</a>
 	<a href="${pageContext.request.contextPath}/Livingston">Livingston</a>
-	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
-	<a href="${pageContext.request.contextPath}/Douglass">Douglass</a>
+	<a href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a>
 	<a href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
 	<a href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
 	<a href="${pageContext.request.contextPath}/Timeline">Timeline</a>
