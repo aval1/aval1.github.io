@@ -8,6 +8,216 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 </head>
+<style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#container {
+    border:none;
+    display: table;
+    width: 100%;
+}
+#content, #sidebar {
+    display: table-cell;
+    width:75%;
+}
+#content {
+}
+
+#sidebar {
+
+}
+#sidebar > ul {
+	padding-top:20px;
+	padding-bottom:20px;
+    background: #FF2400;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+}
+a.specialeffects:hover {
+  color: black ;
+  background-color: #cfc ;
+}
+.tab button {
+	font-family:serif;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+</style>
 <body>
 
 <div class="topnav">
@@ -27,6 +237,35 @@
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
 </div>
+<hr style="height:1px;border:none;color:#333;background-color:#333;">
+<div id="container">
+    
+    <div id="content">
+    <h2>Articles</h2>
+           <table>
+          <tr><td><blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/10/hidden-plain-sight-rutgers-ecological-preserve/">Hidden in Plain Sight: Rutgers Ecological Preserve</a></h4><p>The Rutgers Ecological Preserve is one of the largest forests in New Jersey. The expansive preserve, spanning 316 acres, features numerous fresh water streams that feed into the Raritan River and houses numerous hiking and biking trails for the public to enjoy.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+</tr>
+          </table>
+         </div>
+    
+    <div id="sidebar">
+    <ul>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Voting">Voting</a> </li>
+	</ul>
+    </div>
+    
+</div>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -38,9 +277,9 @@ I'm here to see that shit come back to life </p>
 </div>
 
 <div id="Overview" class="tabcontent">
+
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>London is the capital city of England.</p>
 </div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -58,8 +297,42 @@ I'm here to see that shit come back to life </p>
 
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Map</h3>
-  <p>Tokyo is the capital of Japan.</p>
+    <p> <h3>Scupture Map</h3>
+
+<img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="display: none;width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal"style="display: none;">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01" src="${pageContext.request.contextPath}/jsps/images/redswamp.png">
+  <div id="caption"></div>
+</div>
+
+<div class="popup" onclick="myFunction()" style="display: none;">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
+</div>
+
+
+<img src="${pageContext.request.contextPath}/jsps/images/LivingstonMap.jpg" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
+  <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="661,325,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="462,451,14" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="473,405,14" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="330,350,14" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="275,395,14" onclick="myFunction(this.id)" href="#">
+  <area id="10" shape="circle" coords="235,369,14" onclick="myFunction(this.id)" href="#">
+  <area id="11" shape="circle" coords="249,345,14" onclick="myFunction(this.id)" href="#">
+  <area id="12" shape="circle" coords="237,315,14" onclick="myFunction(this.id)" href="#">
+  <area id="13" shape="circle" coords="174,277,14" onclick="myFunction(this.id)" href="#">
+  <area id="14" shape="circle" coords="144,406,14" onclick="myFunction(this.id)" href="#">
+  <area id="15" shape="circle" coords="828,1132,14" onclick="myFunction(this.id)" href="#">
+  <area id="16" shape="circle" coords="548,1241,14" onclick="myFunction(this.id)" href="#">
+</map></p>
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -77,6 +350,30 @@ I'm here to see that shit come back to life </p>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 <script>
+var modal = document.getElementById('myModal');
+
+//Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function myFunction(clicked_id) {
+	var x = clicked_id;
+	 var popup = document.getElementById("myPopup");
+	 popup.classList.toggle("show");
+	 modal.style.display = "block";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
+captionText.innerHTML = this.alt;
+}
+
+//Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+//When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+modal.style.display = "none";
+}
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

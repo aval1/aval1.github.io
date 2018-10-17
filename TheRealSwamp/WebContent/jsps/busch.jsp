@@ -428,19 +428,34 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
 <a href="#" class="show_hide" data-content="toggle-text">Read More</a>
 </div>
 
-	<hr style="height:1px;border:none;color:#333;background-color:#333;">
-          
-          <h2 class="mt-4">Articles</h2>
-          <hr>
-          <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-        </div>
-        <div class="col-sm-4">
-        <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+<div id="container">
+    
+    <div id="content">
+    <h2>Articles</h2>
+           <table>
+          <tr><td><blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-plain-sight-cave/">Hidden in Plain Sight: The CAVE</a></h4><p>The second floor of the Hill Center Annex is an unassuming hallway, left mostly unvisited by the many students who have class in the first floor lecture halls. Yet if you were to venture up there, you would find that its brick walls and industrial doors are home to an abundant amount of resources and a bustling community of students.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+</tr>
+          </table>
+         </div>
+    
+    <div id="sidebar">
+    <ul>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Voting">Voting</a> </li>
+	</ul>
+    </div>
+    
+</div>
   <!-- <div class="fb-page" data-href="https://www.facebook.com/search/events/?q=busch%20campus" data-tabs="events" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
 <blockquote cite="https://www.facebook.com/search/events/?q=busch%20campus" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pg/RutgersU/events/?ref=page_internal">
 Rutgers University</a></blockquote></div>  -->
@@ -649,7 +664,7 @@ Rutgers University</a></blockquote></div>  -->
   </table>
 
 <table border="2">
-"WebContent/jsps/livingston.jsp"<tr>
+<tr>
 <td>user ID</td>
 <td>Birthday</td>
 <td>Gender</td>

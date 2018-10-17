@@ -218,21 +218,45 @@
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
-
   	<hr style="height:1px;border:none;color:#333;background-color:#333;">
-          <h2>Articles</h2>
-          <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+<div id="container">
+    
+    <div id="content">
+    <h2>Articles</h2>
+           <table>
+          <tr><td><a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+</tr>
+          </table>
+         </div>
+    
+    <div id="sidebar">
+    <ul>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Voting">Voting</a> </li>
+	</ul>
+    </div>
+    
+</div>
 
-<blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+ 
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
   <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
   <button class="tablinks" onclick="openCity(event, 'Map')">Map</button>
   <button class="tablinks" onclick="openCity(event, 'Major Rankings')">Major Rankings</button>
-  <button class="tablinks" onclick="openCity(event, 'Dorm Rankings')">Dorm Rankings</button>
+  <button class="tablinks" onclick="openCity(event, 'Dorm Rankings')">Articles</button>
   <button class="tablinks" onclick="openCity(event, 'Pictures')">Pictures</button>
   <button class="tablinks" onclick="openCity(event, 'Greek Life')">Greek Life</button>
 </div>
@@ -240,14 +264,14 @@ I'm here to see that shit come back to life </p>
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>London is the capital city of England.</p>
+  <p>GNERAL HISTORY OF COLLEGE AVE</p>
 </div>
 
 <div id="Fun Facts" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Fun Facts</h3>
     <ul>
-    	<li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
+    <li>New Brunswick was orignally called Prigmore's Swamp... hence the name....<sup><a href="https://twitter.com/CityofNewBruns/status/1001886195192918016"  target="_blank">[s]</a></sup></li>
 	<li>Rutgers has a tomato named after itself<sup><a href="https://en.wikipedia.org/wiki/Rutgers_tomato#History"  target="_blank">[s]</a></sup></li>
 	<li>The cure of TB was found at Rutgers 1943, by Albert Schatz, under the supervision of Nobel Prize winner, Selman Waksman <sup><a href="https://en.wikipedia.org/wiki/Streptomycin#History"  target="_blank">[s]</a></sup></li>
 	<li>Selman Waksman discovered the ability to discover antibiotics <sup><a href="https://news.rutgers.edu/feature/selman-waksman-rutgers-alumnus-researcher-and-nobel-prize-winner-developed-system-discover/20160417#.W4Lu_uhKjIU"  target="_blank">[s]</a></sup></li>
@@ -273,13 +297,13 @@ I'm here to see that shit come back to life </p>
 <div id="Map" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Scupture Map</h3>
-  <div id="mapid"></div>
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+ <!-- <div id="mapid"></div>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>  -->
 <script src="${pageContext.request.contextPath}/jsps/js/collegeave.js"></script>
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3> Building List</h3>
+  <h3> Building History</h3>
   <p>
   
   </p>
@@ -309,13 +333,20 @@ I'm here to see that shit come back to life </p>
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>idks</h3>
-  <blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/11/hidden-in-plain-sight-the-rutgers-geology-museum/">Hidden in Plain Sight: The Rutgers Geology Museum</a></h4><p>You've probably passed it the dozens of times you were anywhere near Queens College and Kirkpatrick Chapel. The Rutgers Geology Museum is one of the oldest collegiate geology museums in the country. I Am Rutgers attended 'Minerals Late Night', a monthly event that aims to teach guests about powerful minerals through demonstrations, arts and crafts, and other educational activities.</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+  <h1>PAST ARTICLES, CLICK WOULD MOVE YOU HERE</h1>
+         <table>
+          <tr><td><a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+			<td><a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+<td><a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+</tr>
+          </table>
 </div>
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-   <h3>Scupture Map</h3>
+   <h3>Cool Links and info on college ave</h3>
 
 <img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="width:100%;max-width:300px">
 
@@ -333,30 +364,25 @@ I'm here to see that shit come back to life </p>
 </div>
 
 
-<img src="${pageContext.request.contextPath}/jsps/images/CollegeAveMap.jpg" usemap="#planetmap">
+<img src="${pageContext.request.contextPath}/jsps/images/CAMap.jpg" usemap="#planetmap">
 
 <map name="planetmap">
-  <area id="1" shape="circle" coords="692,447,14" onclick="myFunction(this.id)" href="#">
-  <area id="2" shape="circle" coords="670,394,14" onclick="myFunction(this.id)" href="#">
-  <area id="3" shape="circle" coords="1682,1409,14" onclick="myFunction(this.id)" href="#">
-  <area id="4" shape="circle" coords="1786,1405,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="1737,1558,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="1650,1658,14" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="2167,1697,14" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="467,2947,14" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="1193,3043,14" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="1292,3023,14" onclick="myFunction(this.id)" href="#">
+  <area id="1" shape="circle" coords="460,295,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="446,262,14" onclick="myFunction(this.id)" href="#">
+  <area id="3" shape="circle" coords="1120,939,14" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="1190,933,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="1159,1038,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="1099,1101,14" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="1444,1117,14" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="309,1963,14" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="796,2028,14" onclick="myFunction(this.id)" href="#">
+  <area id="10" shape="circle" coords="862,2015,14" onclick="myFunction(this.id)" href="#">
   <area id="11" shape="circle" coords="1548,2607,14" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="237,315,14" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="174,277,14" onclick="myFunction(this.id)" href="#">
-  <area id="14" shape="circle" coords="144,406,14" onclick="myFunction(this.id)" href="#">
-  <area id="15" shape="circle" coords="828,1132,14" onclick="myFunction(this.id)" href="#">
-  <area id="16" shape="circle" coords="548,1241,14" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
 <div id="Greek Life" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Greek Life Links</h3>
+  <h3>DELETE THIS</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 <script>
@@ -372,7 +398,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
-modalImg.src = "${pageContext.request.contextPath}/jsps/images/CollegeAve/"+ x +".jpg";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/CollegeAve/"+ x +".PNG";
 captionText.innerHTML = this.alt;
 }
 

@@ -38,13 +38,13 @@ public class Busch extends HttpServlet {
 		String votes = null;
 		float average = 0;
 		String value = "0";
-		String value2 = "0";
+		//String value2 = "0";
 		String submit = request.getParameter("submit");
 		
 
 		if("submit".equals(submit)) {
 			value=request.getParameter("stars");
-			value2=request.getParameter("stars1");
+			//value2=request.getParameter("stars1");
 		try
 		{
 		Class.forName("com.mysql.jdbc.Driver");
@@ -77,7 +77,7 @@ public class Busch extends HttpServlet {
 	    request.setAttribute("votes", votes);
 	    request.setAttribute("average", average);
 	    request.setAttribute("value",value);
-	    request.setAttribute("value2",value2);
+	    //request.setAttribute("value2",value2);
 		}
 	   
 		response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -92,7 +92,7 @@ public class Busch extends HttpServlet {
 		String itemPost =request.getParameter("item");
 		int ratingPost =Integer.parseInt(request.getParameter("rating"));
 		int votePost =Integer.parseInt(request.getParameter("votes"));
-		int averagePost =Integer.parseInt(request.getParameter("average"));*/
+		int averagePost =Integer.parseInt(request.getParameter("average"));
 		//String value = request.getParameter("stars");
 		
 		//request.setAttribute("value",value);
@@ -157,6 +157,7 @@ public class Busch extends HttpServlet {
 			      }
 			   }
 		}
+		*/
 	}
 
 	}

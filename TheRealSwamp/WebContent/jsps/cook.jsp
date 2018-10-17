@@ -49,6 +49,35 @@ It seems that a lot of these historical tidbits have been lost in the translatio
 I'm here to see that shit come back to life </p>
 </div>
 
+<div id="container">
+    
+    <div id="content">
+    <h2>Articles</h2>
+           <table>
+          <tr><td><blockquote class="embedly-card"><h4><a href="http://i-am.rutgers.edu/2015/02/scarlet-lore-passion-puddle/">Scarlet Lore: Passion Puddle</a></h4><p>Did you know that when certain Rutgers students walk around Passion Puddle together three times, they are supposed to live happily ever after? Or so legend has it. Zack Morrison discusses the origins of this myth and more on this episode of Scarlet Lore.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
+</tr>
+          </table>
+         </div>
+    
+    <div id="sidebar">
+    <ul>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <li><a class="specialeffects"  href="${pageContext.request.contextPath}/Busch">Busch</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Livingston">Livingston</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/GreekLife">Greek Life</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/ClassGifts">Class Gifts</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Timeline">Timeline</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Parking">Parking Hacks</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Clubs">Club Infomation</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/FreshmanLinks">Freshman Links</a>
+	<li><a class="specialeffects"  href="${pageContext.request.contextPath}/Voting">Voting</a> </li>
+	</ul>
+    </div>
+    
+</div>
+
 <% Connection c = connect();
 out.print(c);
 close(c);
@@ -104,7 +133,7 @@ close(c);
 </div>
 
 
-<img src="${pageContext.request.contextPath}/jsps/images/BuschMap.jpg" alt="Planets" usemap="#planetmap">
+<img src="${pageContext.request.contextPath}/jsps/images/Cook.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
   <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
@@ -151,7 +180,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
-modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/Cook/"+ x +".JPG";
 captionText.innerHTML = this.alt;
 }
 
