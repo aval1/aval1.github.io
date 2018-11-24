@@ -10,12 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Bootstrap core CSS -->
-    <link href="${pageContext.request.contextPath}/jsps/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="${pageContext.request.contextPath}/jsps/css/business-frontpage.css" rel="stylesheet">
     
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Prigmore's Swamp</title>
@@ -27,8 +21,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/dropdown.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
@@ -463,37 +455,7 @@ Rutgers University</a></blockquote></div>  -->
   <!-- <a class="embedly-card" data-card-controls="0" href="http://i-am.rutgers.edu/2015/11/rutgers-before-the-leaves-drop/">Rutgers, Before the Leaves Drop.</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> -->
 </div>
-<!--<div id="toc_container">
-<p class="toc_title">Contents</p>
-<ul class="toc_list">
-  <li><a href="#First_Point_Header">1 First Point Header</a>
-  <ul>
-    <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-    <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
-  </ul>
-</li>
-<li><a href="#Second_Point_Header">2 Second Point Header</a></li>
-<li><a href="#Third_Point_Header">3 Third Point Header</a></li>
-</ul>
-</div>
-        <h2 class="mt-4">Contact Us</h2>
-          <address>
-            <strong>Start Bootstrap</strong>
-            <br>3481 Melrose Place
-            <br>Beverly Hills, CA 90210
-            <br>
-          </address>
-          <address>
-            <abbr title="Phone">P:</abbr>
-            (123) 456-7890
-            <br>
-            <abbr title="Email">E:</abbr>
-            <a href="mailto:#">name@example.com</a>
-          </address>
-        </div>
-      </div>
-      -->
-</div>
+
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -587,7 +549,7 @@ Rutgers University</a></blockquote></div>  -->
   <tr>
   <td><a href="#">Busch Dining Hall</a></td>
   <td>
-   <form action="${pageContext.request.contextPath}/Busch" method="post">
+   <form action="${pageContext.request.contextPath}/Busch" method="get">
   <fieldset class="rating" id="1">     
         <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
         <label class="stars" for="4_stars">4 stars</label>
@@ -704,8 +666,8 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
- modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
- captionText.innerHTML = this.alt;
+ 	modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".jpg";
+ 	captionText.innerHTML = this.alt;
 }
 
 //Get the <span> element that closes the modal
@@ -760,6 +722,5 @@ document.getElementById("defaultOpen").click();
 </script>
 
 <footer>Copyright &copy; Big Pumba Studios</footer>   
-    <script src="${pageContext.request.contextPath}/jsps/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
 <title>Prigmore's Swamp</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
 #myImg {
@@ -236,6 +237,13 @@ a.specialeffects:hover {
 <p> The Long History of Rutgers and New Brunswick goes way back into the 1800s.
 It seems that a lot of these historical tidbits have been lost in the translation of time.
 I'm here to see that shit come back to life </p>
+
+<div class="content">Before Busch became recongized as the engineering campus, the engineering department was in Murray Hall.
+This is where the main math and engineering courses were taught. After the Soviet Union released Spotnik, the federal government increased its spending on academic science research.
+With this extra money, in 1962, Rutgers was able to relocate the College of Engineering to Busch Campus. At some point it was named University Heights Campus (idk why lol). Then in 1971, the campus was renamed Busch,
+after a millionare from edgewater named Charles L. Busch unexpecticly donated $10 million to the University for biological research after he died</div>
+<a href="#" class="show_hide" data-content="toggle-text">Read More</a>
+</div>
 </div>
 <hr style="height:1px;border:none;color:#333;background-color:#333;">
 <div id="container">
@@ -362,7 +370,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
-modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/Livingston/"+ x +".jpg";
 captionText.innerHTML = this.alt;
 }
 

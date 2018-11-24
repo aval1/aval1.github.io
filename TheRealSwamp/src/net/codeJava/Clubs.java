@@ -1,6 +1,9 @@
 package net.codeJava;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,8 +30,23 @@ public class Clubs extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		request.getRequestDispatcher("/jsps/clubs.jsp").forward(request, response);
+		try{  
+			  
+			response.setContentType("text/html");  
+			PrintWriter out=response.getWriter();  
+			  
+			ServletContext context=getServletContext();  
+			context.setAttribute("company","IBM");  
+			String n=(String)context.getAttribute("company");  
+			  
+			out.println("Welcome to "+n);  
+			out.close();  
+			out.println("Welcome to first servlet");  
+			out.println("<a href='servlet2'>visit</a>");  
+			out.close();  
+			  
+			}catch(Exception e){
+				System.out.println(e);}  
 	}
 
 	/**

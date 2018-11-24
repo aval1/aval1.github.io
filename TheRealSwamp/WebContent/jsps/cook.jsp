@@ -155,7 +155,25 @@ close(c);
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Major Rankings</h3>
-  <p>Tokyo is the capital of Japan.</p>
+    <form method="post">
+ <table border="2">
+<tr>
+<td>user ID</td>
+<td>Birthday</td>
+<td>Gender</td>
+<td>First Name</td>
+<td>Last Name</td>
+</tr>
+<tr>
+<td>${ids}</td>
+<td>${item}</td>
+<td>${rating}</td>
+<td>${votes}</td>
+<td>${average}</td>
+</tr>
+</table>
+</form>
+
 </div>
 <div id="Dorm Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>

@@ -41,12 +41,12 @@ public class Busch extends HttpServlet {
 		//String value2 = "0";
 		String submit = request.getParameter("submit");
 		
+		if(submit=="submit") {
+			System.out.println("yay!");
+		}
+		
 
-		if("submit".equals(submit)) {
-			value=request.getParameter("stars");
-			//value2=request.getParameter("stars1");
-		try
-		{
+		try{
 		Class.forName("com.mysql.jdbc.Driver");
 		String url="jdbc:mysql://127.0.0.1:3307/sakila";
 		String username="root";
@@ -67,8 +67,7 @@ public class Busch extends HttpServlet {
 		stmt.close();
 		conn.close();
 		}
-		catch(Exception e)
-		{
+		catch(Exception e){
 		e.printStackTrace();
 		}
 		request.setAttribute("ids", ids);
@@ -78,8 +77,7 @@ public class Busch extends HttpServlet {
 	    request.setAttribute("average", average);
 	    request.setAttribute("value",value);
 	    //request.setAttribute("value2",value2);
-		}
-	   
+	    
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		request.getRequestDispatcher("/jsps/busch.jsp").forward(request, response);
 		}
@@ -88,6 +86,7 @@ public class Busch extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request,response);
 		/*int idPost =Integer.parseInt(request.getParameter("ids"));
 		String itemPost =request.getParameter("item");
 		int ratingPost =Integer.parseInt(request.getParameter("rating"));
