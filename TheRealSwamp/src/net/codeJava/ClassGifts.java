@@ -1,11 +1,6 @@
 package net.codeJava;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Timestamp;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,29 +32,49 @@ public class ClassGifts extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		/*Connection conn = null;
-		 PreparedStatement stmt = null;
-	    String query = "select * from  classgifts";
-	    try {
-	    	Class.forName("com.mysql.jdbc.Driver");
+				int ids = 0;
+				String item = null;
+				String rating = null;
+				String votes = null;
+				String average = 0;
+				String value = "0";
+				//String value2 = "0";
 
-		    conn = DriverManager.getConnection(DB_URL,USER,PASS);
-	        ResultSet rs = stmt.executeQuery(query);
-	        while (rs.next()) {
-	            String classYear = rs.getString("classYear");
-	            String giftName = rs.getString("giftName");
-	            String info = rs.getString("info");
-	            String location = rs.getString("location");
-	            String extra = rs.getString("extra");
-	        }
-	        conn.close();
-   } catch (Exception e) {
-       e.printStackTrace();
-   }
-   */
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		request.getRequestDispatcher("/jsps/classgifts.jsp").forward(request, response);
-	}
+				try{
+				Class.forName("com.mysql.jdbc.Driver");
+				String url="jdbc:mysql://127.0.0.1:3307/sakila";
+				String username="root";
+				String password="root";
+				String query="select * from classgifts";
+				Connection conn=DriverManager.getConnection(url, username, password);
+				Statement stmt=conn.createStatement();
+				ResultSet rs=stmt.executeQuery(query);
+				while(rs.next())
+				{
+				ids = rs.getInt("classYear");
+				item = rs.getString("giftName");
+				rating = rs.getString("info");
+				votes = rs.getString("location");
+				average = rs.getString("extra");
+				}
+				rs.close();
+				stmt.close();
+				conn.close();
+				}
+				catch(Exception e){
+				e.printStackTrace();
+				}
+				request.setAttribute("classYear", ids);
+			    request.setAttribute("giftName", item);
+			    request.setAttribute("info", rating);
+			    request.setAttribute("location", votes);
+			    request.setAttribute("average", average);
+			    request.setAttribute("extra",value);
+			    //request.setAttribute("value2",value2);
+			    
+				response.getWriter().append("Served at: ").append(request.getContextPath());
+				request.getRequestDispatcher("/jsps/classgifts.jsp").forward(request, response);
+				}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

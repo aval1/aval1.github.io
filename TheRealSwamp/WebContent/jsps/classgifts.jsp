@@ -73,6 +73,25 @@ I'm here to see that shit come back to life </p>
 <p>https://muckgers.com/then-and-now-a-photographic-study-of-rutgers-college-avenue-campus-part-1-9335c35d0142 </p>
 <p> https://muckgers.com/then-and-now-a-photographic-study-of-rutgers-college-avenue-campus-part-2-5d487a9b0ed9 </p>
 <table border="2">
+<!--<c:forEach items="${leagueIds}" varStatus="loop">
+		<p> League Name: ${leagueNames[loop.index]}</p>
+		<br>
+		<p> LeagueId: ${leagueIds[loop.index]}</p>
+		
+		 
+		 <p>
+		<table border=1 frame=void rules=rows>
+			<c:forEach var="currentAsset" items="${trophyList[loop.index]}" varStatus="loop2">
+				<tr>	
+					<td>
+						${trophyList[loop.index][loop2.index]}
+					</td>
+				</tr>
+			</c:forEach>
+		</table>
+		<hr>
+		</p>
+	</c:forEach>-->
 <tr>
 <td>Class Year</td>
 <td>Gift Name</td>

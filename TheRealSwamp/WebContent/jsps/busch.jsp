@@ -469,7 +469,12 @@ Rutgers University</a></blockquote></div>  -->
 <div id="Overview" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Overview</h3>
-  <p>FInd the fucking gnomes on Buschh</p>
+  <p>FInd the fucking gnomes on Busch</p>
+  <form action="${pageContext.request.contextPath}/Busch" method="POST">
+				Enter your name: 
+				<input type="text" name="user" />
+				<input type="submit" value="Submit" />
+			</form>
   </div>
 
 <div id="Fun Facts" class="tabcontent">
@@ -549,7 +554,7 @@ Rutgers University</a></blockquote></div>  -->
   <tr>
   <td><a href="#">Busch Dining Hall</a></td>
   <td>
-   <form action="${pageContext.request.contextPath}/Busch" method="get">
+   <form action="${pageContext.request.contextPath}/Busch" method="POST">
   <fieldset class="rating" id="1">     
         <span class="rater"><input type="radio" name="stars" id="4_stars" value="5" >
         <label class="stars" for="4_stars">4 stars</label>
