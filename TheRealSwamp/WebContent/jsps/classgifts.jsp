@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -65,33 +66,63 @@ I'm here to see that shit come back to life </p>
 	<br> <br>
 	<input type="submit" name="Submit" value="submit" > 
 </form>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
 
-<p></p>
+<form method="post">
 
+<table border="2">
+<tr>
+<td>user ID</td>
+<td>Birthday</td>
+<td>Gender</td>
+<td>First Name</td>
+<td>Last Name</td>
+</tr>
+<%
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:mysql://localhost:3307/sakila";
+String username="root";
+String password="root";
+String query="select * from classgifts";
+Connection conn=DriverManager.getConnection(url, username, password);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+<tr><td><%=rs.getInt("classYear") %></td>
+<td><%=rs.getString("giftName") %></td>
+<td><img src="<%=rs.getString("info") %>"></td>
+<td><%=rs.getString("location") %></td>
+<td><%=rs.getString("extra") %></td></tr>
+
+ <%
+}
+%>
+</table>
+<%
+rs.close();
+stmt.close();
+conn.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+%>
+</form>
+<!--
 <div>
 <h3>Class Gifts</h3>
 <p>https://muckgers.com/then-and-now-a-photographic-study-of-rutgers-college-avenue-campus-part-1-9335c35d0142 </p>
 <p> https://muckgers.com/then-and-now-a-photographic-study-of-rutgers-college-avenue-campus-part-2-5d487a9b0ed9 </p>
 <table border="2">
-<!--<c:forEach items="${leagueIds}" varStatus="loop">
-		<p> League Name: ${leagueNames[loop.index]}</p>
-		<br>
-		<p> LeagueId: ${leagueIds[loop.index]}</p>
-		
-		 
-		 <p>
-		<table border=1 frame=void rules=rows>
-			<c:forEach var="currentAsset" items="${trophyList[loop.index]}" varStatus="loop2">
-				<tr>	
-					<td>
-						${trophyList[loop.index][loop2.index]}
-					</td>
-				</tr>
-			</c:forEach>
-		</table>
-		<hr>
-		</p>
-	</c:forEach>-->
 <tr>
 <td>Class Year</td>
 <td>Gift Name</td>
@@ -156,6 +187,7 @@ It is where graduates used to march through on thier way to thier commencement c
 	<li></li>
 </ul> 
 </div>
+ -->
 
   <footer>Copyright &copy; Big Pumba Studios</footer>   
 </body>

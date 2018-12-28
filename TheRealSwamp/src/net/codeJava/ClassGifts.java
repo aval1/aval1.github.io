@@ -36,7 +36,7 @@ public class ClassGifts extends HttpServlet {
 				String item = null;
 				String rating = null;
 				String votes = null;
-				String average = 0;
+				String average = null;
 				String value = "0";
 				//String value2 = "0";
 
