@@ -340,7 +340,7 @@ after a millionare from edgewater named Charles L. Busch unexpecticly donated $1
   <area id="14" shape="circle" coords="144,406,14" onclick="myFunction(this.id)" href="#">
   <area id="15" shape="circle" coords="828,1132,14" onclick="myFunction(this.id)" href="#">
   <area id="16" shape="circle" coords="548,1241,14" onclick="myFunction(this.id)" href="#">
-</map></p>
+</map>
 </div>
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -370,7 +370,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
-modalImg.src = "${pageContext.request.contextPath}/jsps/images/Livingston/"+ x +".jpg";
+modalImg.src = "${pageContext.request.contextPath}/jsps/images/Livingston/"+ x +".JPG";
 captionText.innerHTML = this.alt;
 }
 

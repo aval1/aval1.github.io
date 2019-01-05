@@ -29,7 +29,7 @@ public class Cook extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		int ids = 0;
+		/*int ids = 0;
 		String item = null;
 		String rating = null;
 		String votes = null;
@@ -65,8 +65,10 @@ public class Cook extends HttpServlet {
 		catch(Exception e)
 		{
 		e.printStackTrace();
-		}
-		request.getRequestDispatcher("/Cook").forward(request, response);
+		}*/
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.getRequestDispatcher("/jsps/cook.jsp").forward(request, response);
+		
 	}
 
 	/**

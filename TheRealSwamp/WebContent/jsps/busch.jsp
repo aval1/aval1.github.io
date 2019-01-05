@@ -17,63 +17,12 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/home.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jsps/css/rating.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/jsps/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/rating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/dropdown.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/imagepreview.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jsps/js/close.js"></script>
 </head>
 <style>
-#preview{
-	position:absolute;
-	border:1px solid #ccc;
-	background:#333;
-	padding:5px;
-	display:none;
-	color:#fff;
-	}
-
-.sidenav {
-    height: 300px;
-    width: 400px;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    
-    input[type="radio"] {
-    padding-right: 4px;
-    position: absolute;
-    left: 340px;
-    margin-top: 10px;
-    visibility: hidden;
-}
-}
-
 div#right-sidebar{
   position:absolute;
   top:0;
@@ -81,243 +30,6 @@ div#right-sidebar{
   width:<length>;
   height:100%;
  }
-
-a.morelink {
-	text-decoration:none;
-	outline: none;
-}
-.morecontent span {
-	display: none;
-
-}
-
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
 </style>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -513,7 +225,7 @@ Rutgers University</a></blockquote></div>  -->
 </div>
 
 
-<img src="${pageContext.request.contextPath}/jsps/images/BuschMap.jpg" alt="Planets" usemap="#planetmap">
+<img src="${pageContext.request.contextPath}/jsps/images/Busch/BuschMap.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
   <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
@@ -567,11 +279,12 @@ Rutgers University</a></blockquote></div>  -->
         <input type="radio" name="stars" id="0_stars" value="1" required>
         <label class="stars" for="0_stars">0 star</label>
     </fieldset>
-    </form></td>
+    </td>
   <td id="lets">0</td>
   <td id="see">0</td>
   <td id="money">0</td>
   <td><input type="submit" name="submit" value="submit" ></td>
+  </form>
   
   </tr>
     <tr>
@@ -606,7 +319,7 @@ Rutgers University</a></blockquote></div>  -->
         <input type="radio" name="stars2" id="0_stars2" value="1" required>
         <label class="stars" for="0_stars2">0 star</label>
     </fieldset></td>
-  <td id="we">0</td>
+  <td id="we" name="base">0</td>
   <td id="are">0</td>
   <td id="farmers">0</td>
   </tr>
@@ -671,7 +384,7 @@ function myFunction(clicked_id) {
 	 var popup = document.getElementById("myPopup");
 	 popup.classList.toggle("show");
 	 modal.style.display = "block";
- 	modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".jpg";
+ 	modalImg.src = "${pageContext.request.contextPath}/jsps/images/Busch/"+ x +".JPG";
  	captionText.innerHTML = this.alt;
 }
 
@@ -689,9 +402,9 @@ span.onclick = function() {
  popup.classList.toggle("show");
 }*/
 
-function myFunction() {
+/*function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
+}*/
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {

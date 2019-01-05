@@ -133,25 +133,21 @@ close(c);
 </div>
 
 
-<img src="${pageContext.request.contextPath}/jsps/images/Cook.jpg" alt="Planets" usemap="#planetmap">
+<img src="${pageContext.request.contextPath}/jsps/images/Cook/CookMap.jpg" alt="Planets" usemap="#planetmap">
 
 <map name="planetmap">
-  <area id="1" shape="circle" coords="1145,525,14" onclick="myFunction(this.id)" href="#">
-  <area id="2" shape="circle" coords="857,495,14" onclick="myFunction(this.id)" href="#">
-  <area id="3" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="4" shape="circle" coords="879,339,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="661,324,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="461,442,14" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="12" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
-  <area id="13" shape="circle" coords="739,479,14" onclick="myFunction(this.id)" href="#">
+  <area id="1" shape="circle" coords="502,407,14" onclick="myFunction(this.id)" href="#">
+  <area id="2" shape="circle" coords="870,767,14" onclick="myFunction(this.id)" href="#">
+  <area id="3" shape="circle" coords="962,1010,14" onclick="myFunction(this.id)" href="#">
+  <area id="4" shape="circle" coords="1190,798,14" onclick="myFunction(this.id)" href="#">
+  <area id="5" shape="circle" coords="1136,866,14" onclick="myFunction(this.id)" href="#">
+  <area id="6" shape="circle" coords="1420,926,14" onclick="myFunction(this.id)" href="#">
+  <area id="7" shape="circle" coords="1097,2300,14" onclick="myFunction(this.id)" href="#">
+  <area id="8" shape="circle" coords="863,2659,14" onclick="myFunction(this.id)" href="#">
+  <area id="9" shape="circle" coords="1972,2737,14" onclick="myFunction(this.id)" href="#">
 </map>
 </div>
-</div>
+
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Major Rankings</h3>
