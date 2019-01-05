@@ -73,8 +73,7 @@ I'm here to see that shit come back to life </p>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script></td>
 </tr>
           </table>
-         </div>
-    
+         </div>   
     <div id="sidebar">
     <ul>
     <li><a class="specialeffects"  href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
@@ -92,9 +91,6 @@ I'm here to see that shit come back to life </p>
     </div>
     
 </div>
-
-
- 
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
@@ -152,8 +148,6 @@ I'm here to see that shit come back to life </p>
   <div id="caption"></div>
 </div>
 
-<p>Click on the sun or on one of the planets to watch it closer:</p>
-
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
 </div>
@@ -195,39 +189,6 @@ I'm here to see that shit come back to life </p>
 </div>
 <div id="Pictures" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Scupture Map</h3>
-
-<img id="myImg" src="${pageContext.request.contextPath}/jsps/images/redswamp.png" alt="Snow" style="width:100%;max-width:300px">
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01" src="${pageContext.request.contextPath}/jsps/images/redswamp.png">
-  <div id="caption"></div>
-</div>
-
-<p>Click on the sun or on one of the planets to watch it closer:</p>
-
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
-</div>
-
-
-<img src="${pageContext.request.contextPath}/jsps/images/CollegeAve/CAMap.jpg" alt="Planets" usemap="#planetmap">
-
-<map name="planetmap">
-  <area id="1" shape="circle" coords="460,295,14" onclick="myFunction(this.id)" href="#">
-  <area id="2" shape="circle" coords="446,262,14" onclick="myFunction(this.id)" href="#">
-  <area id="3" shape="circle" coords="1120,939,14" onclick="myFunction(this.id)" href="#">
-  <area id="4" shape="circle" coords="1190,933,14" onclick="myFunction(this.id)" href="#">
-  <area id="5" shape="circle" coords="1159,1038,14" onclick="myFunction(this.id)" href="#">
-  <area id="6" shape="circle" coords="1099,1101,14" onclick="myFunction(this.id)" href="#">
-  <area id="7" shape="circle" coords="1444,1117,14" onclick="myFunction(this.id)" href="#">
-  <area id="8" shape="circle" coords="309,1963,14" onclick="myFunction(this.id)" href="#">
-  <area id="9" shape="circle" coords="796,2028,14" onclick="myFunction(this.id)" href="#">
-  <area id="10" shape="circle" coords="862,2015,14" onclick="myFunction(this.id)" href="#">
-  <area id="11" shape="circle" coords="1548,2607,14" onclick="myFunction(this.id)" href="#">
-</map>
 </div>
 <div id="Greek Life" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>

@@ -679,3 +679,9 @@ a.morelink {
         width: 100%;
     }
 }
+.popup{
+    display:none;
+}
+#myImg{
+    display:none;
+}

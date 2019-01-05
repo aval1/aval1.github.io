@@ -173,9 +173,9 @@ Rutgers University</a></blockquote></div>  -->
   <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
   <button class="tablinks" onclick="openCity(event, 'Fun Facts')">Fun Facts</button>
   <button class="tablinks" onclick="openCity(event, 'Map')">Map</button>
-  <button class="tablinks" onclick="openCity(event, 'Major Rankings')">Major Rankings</button>
+  <button class="tablinks" onclick="openCity(event, 'Major Rankings')">Building History</button>
   <button class="tablinks" onclick="openCity(event, 'Dorm Rankings')">Dorm Rankings</button>
-  <button class="tablinks" onclick="openCity(event, 'Pictures')">Pictures</button>
+  <button class="tablinks" onclick="openCity(event, 'Pictures')">Busch Class Gifts</button>
 </div>
 
 <div id="Overview" class="tabcontent">
@@ -218,7 +218,6 @@ Rutgers University</a></blockquote></div>  -->
   <div id="caption"></div>
 </div>
 
-<p>Click on the sun or on one of the planets to watch it closer:</p>
 
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
   <span class="popuptext" id="myPopup">Add caption information here, change the style of the popup <img src="${pageContext.request.contextPath}/jsps/images/1.jpg" id="myPopup"></span>
@@ -249,7 +248,57 @@ Rutgers University</a></blockquote></div>  -->
 
 <div id="Major Rankings" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-   <form >
+ <h3>Busch Building History</h3>
+ <%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+
+<form method="post">
+
+<table border="2" align="center">
+<tr>
+<td>Year Built</td>
+<td>Building Name(s)</td>
+<td>Picture</td>
+<td>Important Points</td>
+<td>Location</td>
+</tr>
+<%
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:mysql://localhost:3307/sakila";
+String username="root";
+String password="root";
+String query="select * from Buildings where Location='Busch'";
+Connection conn=DriverManager.getConnection(url, username, password);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+<tr><td><%=rs.getInt("YearBuilt") %></td>
+<td><%=rs.getString("BuildingName") %></td>
+<td><img src="<%=rs.getString("Picture") %>"></td>
+<td><%=rs.getString("Points") %></td>
+<td><%=rs.getString("Location") %></td></tr>
+
+ <%
+}
+%>
+</table>
+<%
+rs.close();
+stmt.close();
+conn.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+%>
 
 </div>
 <div id="Dorm Rankings" class="tabcontent">

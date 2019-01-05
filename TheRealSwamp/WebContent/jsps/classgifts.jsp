@@ -50,7 +50,7 @@ It seems that a lot of these historical tidbits have been lost in the translatio
 I'm here to see that shit come back to life </p>
 </div>
 
-<!--<form action="${pageContext.request.contextPath}/ClassGifts" method="post">
+<form action="${pageContext.request.contextPath}/ClassGifts" method="post">
 <p>Class Year: <input type="text" name="classYear" value="${classYear}"/></p>
 <p>Gift Name: <input type="text" name="giftName" value="${giftName}"/></p>
 <p>Info: <input type="text" name="info" value="${info}"/></p>
@@ -66,7 +66,7 @@ I'm here to see that shit come back to life </p>
 	<br> <br>
 	<input type="submit" name="Submit" value="submit" > 
 </form>
- -->
+
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.Connection" %>
