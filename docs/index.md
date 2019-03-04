@@ -108,7 +108,7 @@ I'm here to see that shit come back to life </p></td>
 </c:if>
 <div>
 <ul>
-	<li><a href="collegeAve.jsp">College Ave</a></li>
+	<li><a href="collegeave.jsp">College Ave</a></li>
 	<li><a href="${pageContext.request.contextPath}/Busch">Busch</a></li>
 	<li><a href="${pageContext.request.contextPath}/Livingston">Livingston</a></li>
 	<li><a href="${pageContext.request.contextPath}/Cook">Cook/Douglass</a></li>
