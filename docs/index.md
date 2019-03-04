@@ -56,7 +56,7 @@ footer {
     <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="${pageContext.request.contextPath}/CollegeAve">College Ave</a>
+    <a href="collegeAve.html">College Ave</a>
     <a href="${pageContext.request.contextPath}/Busch">Busch</a>
 	<a href="${pageContext.request.contextPath}/Livingston">Livingston</a>
 	<a href="${pageContext.request.contextPath}/Cook">Cook</a>
